@@ -1,35 +1,34 @@
 "use client"
-import { useState, useEffect } from "react"
 import axiosClient from "./_services/axiosClient"
-
-interface Data {
-  id: number
-  name: string
-  price: number
-}
+import { Product } from "./_interfaces/dataInterface"
+import useAxios from "./_hooks/useAxios"
 
 export default function Home() {
-  const [data, setData] = useState<Data[]>([])
+  const { data, error, loading } = useAxios({
+    axiosClient,
+    method: "get",
+    url: "/products",
+  })
 
-  useEffect(() => {
-    axiosClient
-      .get("products")
-      .then((res) => {
-        console.log(res.data)
-        setData(res.data)
-      })
-      .catch((err) => console.error(err))
-  }, [])
+  if (loading) return <div>Carregando...</div>
+  if (error) return <div>{error}</div>
 
   return (
-    <main>
-      <h1 className="text-3xl font-bold">NFeStream</h1>
+    <main className="flex h-screen w-screen items-center justify-center">
       <div>
-        {Array.isArray(data) ? (
-          data.map((products) => <div key={products.id}>{products.name}</div>)
-        ) : (
-          <div>Nenhum produto encontrado</div>
-        )}
+        <h1 className="text-3xl font-bold">NFeStream</h1>
+        <div>
+          {Array.isArray(data) ? (
+            (data as Product[]).map((products: Product) => (
+              <div key={products.id} className="border border-gray-500 p-5">
+                <h2 className="text-sm font-medium">{products.name}</h2>
+                <p className="text-lg font-bold">R$ {products.price}</p>
+              </div>
+            ))
+          ) : (
+            <div>Nenhum produto encontrado</div>
+          )}
+        </div>
       </div>
     </main>
   )
