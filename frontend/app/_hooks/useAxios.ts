@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, useMemo } from "react"
+import { useEffect, useState, useMemo, useRef } from "react"
 import { AxiosInstance, AxiosRequestConfig } from "axios"
 
 interface ConfigRequests {
@@ -8,55 +8,54 @@ interface ConfigRequests {
   moreConfigs?: AxiosRequestConfig
 }
 
-interface UseAxiosReturn {
-  data: unknown[]
+interface UseAxiosReturn<T> {
+  data: T | null
   loading: boolean
-  error: string
+  error: string | null
 }
 
-export default function useAxios(
+export default function useAxios<T = unknown>(
   configRequests: ConfigRequests,
-): UseAxiosReturn {
+): UseAxiosReturn<T> {
   const { axiosClient, method, url, moreConfigs = {} } = configRequests
-  const [data, setData] = useState<unknown[]>([])
+
+  const [data, setData] = useState<T | null>(null)
   const [loading, setLoading] = useState<boolean>(true)
-  const [error, setError] = useState<string>("")
-  const effectRun = useRef(false)
-  const moreConfigsString = JSON.stringify(moreConfigs)
-  const memoizedMoreConfigs = useMemo(() => moreConfigs, [moreConfigsString])
+  const [error, setError] = useState<string | null>(null)
+
+  const axiosClientRef = useRef(axiosClient)
+  const memoizedMoreConfigs = useMemo(
+    () => moreConfigs,
+    [JSON.stringify(moreConfigs)],
+  )
 
   useEffect(() => {
     const controller = new AbortController()
 
     const fetchData = async () => {
+      setLoading(true)
+      setError(null)
       try {
-        const res = await axiosClient[method](url, {
+        const res = await axiosClientRef.current[method](url, {
           ...memoizedMoreConfigs,
           signal: controller.signal,
         })
         setData(res.data)
       } catch (err: unknown) {
-        if (err instanceof Error && err.message === "canceled") {
-          console.log("Requisição cancelada")
-        } else {
-          setError((err as Error).message)
+        if (err instanceof Error && err.message !== "canceled") {
+          setError(err.message)
         }
       } finally {
         setLoading(false)
       }
     }
 
-    if (!effectRun.current) {
-      effectRun.current = true
-      fetchData()
-    } else if (memoizedMoreConfigs) {
-      fetchData()
-    }
+    fetchData()
 
     return () => {
       controller.abort()
     }
-  }, [axiosClient, method, url, memoizedMoreConfigs])
+  }, [method, url, memoizedMoreConfigs])
 
   return { data, loading, error }
 }
