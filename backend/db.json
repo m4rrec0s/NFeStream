@@ -1,53 +1,212 @@
 {
-  "users": [
+  "content": [
     {
       "id": 1,
-      "name": "John Doe",
-      "email": "john.doe@example.com"
+      "chaveAcesso": "35170712345678000195550010000000011000000012",
+      "emitente": {
+        "cnpj": "12345678000199",
+        "nome": "Empresa Emitente Ltda",
+        "endereco": {
+          "logradouro": "Rua Exemplo",
+          "numero": "123",
+          "bairro": "Centro",
+          "municipio": "São Paulo",
+          "uf": "SP",
+          "cep": "01000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "98765432000188",
+        "nome": "Empresa Destinatária SA",
+        "endereco": {
+          "logradouro": "Avenida Exemplo",
+          "numero": "456",
+          "bairro": "Bairro Exemplo",
+          "municipio": "Rio de Janeiro",
+          "uf": "RJ",
+          "cep": "20000-000"
+        }
+      },
+      "dataEmissao": "2023-10-14T10:00:00",
+      "valorTotal": 1500.75,
+      "impostos": {
+        "icms": 200.5,
+        "ipi": 50.25,
+        "pis": 15.0,
+        "cofins": 25.0
+      },
+      "produtos": [
+        {
+          "descricao": "Produto A",
+          "codigo": "001",
+          "ncm": "12345678",
+          "quantidade": 10,
+          "valorUnitario": 100.0,
+          "valorTotal": 1000.0
+        },
+        {
+          "descricao": "Produto B",
+          "codigo": "002",
+          "ncm": "87654321",
+          "quantidade": 5,
+          "valorUnitario": 100.0,
+          "valorTotal": 500.0
+        }
+      ],
+      "numeroNFe": "1000",
+      "status": "Autorizada"
     },
     {
       "id": 2,
-      "name": "Jane Smith",
-      "email": "jane.smith@example.com"
+      "chaveAcesso": "35170712345678000195550010000000021000000021",
+      "emitente": {
+        "cnpj": "22345678000166",
+        "nome": "Segunda Empresa Ltda",
+        "endereco": {
+          "logradouro": "Avenida Paulista",
+          "numero": "1500",
+          "bairro": "Bela Vista",
+          "municipio": "São Paulo",
+          "uf": "SP",
+          "cep": "01310-200"
+        }
+      },
+      "destinatario": {
+        "cnpj": "98765432000188",
+        "nome": "Empresa Destinatária SA",
+        "endereco": {
+          "logradouro": "Avenida Exemplo",
+          "numero": "456",
+          "bairro": "Bairro Exemplo",
+          "municipio": "Rio de Janeiro",
+          "uf": "RJ",
+          "cep": "20000-000"
+        }
+      },
+      "dataEmissao": "2023-08-05T08:30:00",
+      "valorTotal": 850.5,
+      "impostos": {
+        "icms": 120.3,
+        "ipi": 25.5,
+        "pis": 7.5,
+        "cofins": 12.2
+      },
+      "produtos": [
+        {
+          "descricao": "Produto C",
+          "codigo": "003",
+          "ncm": "56341234",
+          "quantidade": 3,
+          "valorUnitario": 283.5,
+          "valorTotal": 850.5
+        }
+      ],
+      "numeroNFe": "1001",
+      "status": "Autorizada"
     },
     {
       "id": 3,
-      "name": "Alice Johnson",
-      "email": "alice.johnson@example.com"
+      "chaveAcesso": "35170712345678000195550010000000031000000031",
+      "emitente": {
+        "cnpj": "32345678000177",
+        "nome": "Terceira Empresa Ltda",
+        "endereco": {
+          "logradouro": "Rua das Flores",
+          "numero": "789",
+          "bairro": "Jardim",
+          "municipio": "Curitiba",
+          "uf": "PR",
+          "cep": "80000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "98765432000188",
+        "nome": "Empresa Destinatária SA",
+        "endereco": {
+          "logradouro": "Avenida Exemplo",
+          "numero": "456",
+          "bairro": "Bairro Exemplo",
+          "municipio": "Rio de Janeiro",
+          "uf": "RJ",
+          "cep": "20000-000"
+        }
+      },
+      "dataEmissao": "2023-09-10T14:45:00",
+      "valorTotal": 1200.0,
+      "impostos": {
+        "icms": 160.0,
+        "ipi": 40.0,
+        "pis": 12.0,
+        "cofins": 20.0
+      },
+      "produtos": [
+        {
+          "descricao": "Produto D",
+          "codigo": "004",
+          "ncm": "34567890",
+          "quantidade": 8,
+          "valorUnitario": 150.0,
+          "valorTotal": 1200.0
+        }
+      ],
+      "numeroNFe": "1002",
+      "status": "Autorizada"
+    },
+    {
+      "id": 4,
+      "chaveAcesso": "35170712345678000195550010000000041000000041",
+      "emitente": {
+        "cnpj": "42345678000188",
+        "nome": "Quarta Empresa Ltda",
+        "endereco": {
+          "logradouro": "Rua das Palmeiras",
+          "numero": "321",
+          "bairro": "Centro",
+          "municipio": "Belo Horizonte",
+          "uf": "MG",
+          "cep": "30000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "98765432000188",
+        "nome": "Empresa Destinatária SA",
+        "endereco": {
+          "logradouro": "Avenida Exemplo",
+          "numero": "456",
+          "bairro": "Bairro Exemplo",
+          "municipio": "Rio de Janeiro",
+          "uf": "RJ",
+          "cep": "20000-000"
+        }
+      },
+      "dataEmissao": "2023-07-22T09:15:00",
+      "valorTotal": 950.0,
+      "impostos": {
+        "icms": 130.0,
+        "ipi": 30.0,
+        "pis": 9.5,
+        "cofins": 15.5
+      },
+      "produtos": [
+        {
+          "descricao": "Produto E",
+          "codigo": "005",
+          "ncm": "67890123",
+          "quantidade": 5,
+          "valorUnitario": 190.0,
+          "valorTotal": 950.0
+        }
+      ],
+      "numeroNFe": "1003",
+      "status": "Autorizada"
     }
   ],
-  "products": [
-    {
-      "id": 1,
-      "name": "Laptop",
-      "price": 999.99
-    },
-    {
-      "id": 2,
-      "name": "Smartphone",
-      "price": 699.99
-    },
-    {
-      "id": 3,
-      "name": "Headphones",
-      "price": 199.99
-    }
-  ],
-  "business": [
-    {
-      "id": 1,
-      "name": "Tech Corp",
-      "industry": "Technology"
-    },
-    {
-      "id": 2,
-      "name": "Health Inc",
-      "industry": "Healthcare"
-    },
-    {
-      "id": 3,
-      "name": "Edu World",
-      "industry": "Education"
-    }
-  ]
+  "pageable": {
+    "pageNumber": 0,
+    "pageSize": 4,
+    "offset": 0
+  },
+  "totalElements": 4,
+  "totalPages": 1,
+  "empty": false
 }
