@@ -1,5 +1,5 @@
 {
-  "content": [
+  "nfes": [
     {
       "id": 1,
       "chaveAcesso": "35170712345678000195550010000000011000000012",
@@ -200,13 +200,5 @@
       "numeroNFe": "1003",
       "status": "Autorizada"
     }
-  ],
-  "pageable": {
-    "pageNumber": 0,
-    "pageSize": 4,
-    "offset": 0
-  },
-  "totalElements": 4,
-  "totalPages": 1,
-  "empty": false
+  ]
 }
