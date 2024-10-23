@@ -17,7 +17,7 @@ export interface Product {
   price: number
 }
 
-export interface Content {
+export interface NFes {
   id: number
   chaveAcesso: string
   emitente: {
