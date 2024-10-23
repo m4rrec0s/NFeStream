@@ -21,7 +21,7 @@ export default function Home() {
   } = useAxios({
     axiosClient,
     method: "get",
-    url: "/nfes?_page=1&_limit=3",
+    url: "/nfes",
   })
 
   if (loading) return <div>Carregando...</div>
@@ -30,9 +30,9 @@ export default function Home() {
   return (
     <main className="h-screen w-screen">
       <Header />
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3 max-md:grid-cols-1">
         <section className="col-span-2 px-5 py-6">
-          <div className="mb-6 flex w-full justify-between">
+          <div className="mb-6 flex w-full justify-between max-md:flex-col max-md:gap-3">
             <h2 className="text-lg font-semibold">Suas NF-es</h2>
             <Search value={searchTerm} onChange={handleSearchChange} />
           </div>
