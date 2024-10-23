@@ -5,52 +5,60 @@
       "chaveAcesso": "35170712345678000195550010000000011000000012",
       "emitente": {
         "cnpj": "12345678000199",
-        "nome": "Empresa Emitente Ltda",
+        "nome": "Mercado Central Ltda",
         "endereco": {
-          "logradouro": "Rua Exemplo",
-          "numero": "123",
-          "bairro": "Centro",
+          "logradouro": "Avenida Paulista",
+          "numero": "1500",
+          "bairro": "Bela Vista",
           "municipio": "São Paulo",
           "uf": "SP",
-          "cep": "01000-000"
+          "cep": "01310-000"
         }
       },
       "destinatario": {
         "cnpj": "98765432000188",
-        "nome": "Empresa Destinatária SA",
+        "nome": "Lucas Oliveira",
         "endereco": {
-          "logradouro": "Avenida Exemplo",
-          "numero": "456",
-          "bairro": "Bairro Exemplo",
-          "municipio": "Rio de Janeiro",
-          "uf": "RJ",
-          "cep": "20000-000"
+          "logradouro": "Rua das Flores",
+          "numero": "123",
+          "bairro": "Centro",
+          "municipio": "Curitiba",
+          "uf": "PR",
+          "cep": "80000-000"
         }
       },
       "dataEmissao": "2023-10-14T10:00:00",
-      "valorTotal": 1500.75,
+      "valorTotal": 4500.5,
       "impostos": {
-        "icms": 200.5,
-        "ipi": 50.25,
-        "pis": 15.0,
-        "cofins": 25.0
+        "icms": 300.5,
+        "ipi": 100.25,
+        "pis": 45.0,
+        "cofins": 55.0
       },
       "produtos": [
         {
-          "descricao": "Produto A",
+          "descricao": "Arroz 5kg",
           "codigo": "001",
-          "ncm": "12345678",
-          "quantidade": 10,
-          "valorUnitario": 100.0,
-          "valorTotal": 1000.0
+          "ncm": "10062010",
+          "quantidade": 30,
+          "valorUnitario": 25.0,
+          "valorTotal": 750.0
         },
         {
-          "descricao": "Produto B",
+          "descricao": "Feijão 1kg",
           "codigo": "002",
-          "ncm": "87654321",
-          "quantidade": 5,
-          "valorUnitario": 100.0,
-          "valorTotal": 500.0
+          "ncm": "07133310",
+          "quantidade": 50,
+          "valorUnitario": 7.0,
+          "valorTotal": 350.0
+        },
+        {
+          "descricao": "Óleo de Soja 900ml",
+          "codigo": "003",
+          "ncm": "15079011",
+          "quantidade": 60,
+          "valorUnitario": 10.0,
+          "valorTotal": 600.0
         }
       ],
       "numeroNFe": "1000",
@@ -58,47 +66,55 @@
     },
     {
       "id": 2,
-      "chaveAcesso": "35170712345678000195550010000000021000000021",
+      "chaveAcesso": "35170787654321000195550010000000011000000023",
       "emitente": {
-        "cnpj": "22345678000166",
-        "nome": "Segunda Empresa Ltda",
+        "cnpj": "23456789000188",
+        "nome": "Auto Peças Veloz SA",
         "endereco": {
-          "logradouro": "Avenida Paulista",
-          "numero": "1500",
-          "bairro": "Bela Vista",
-          "municipio": "São Paulo",
-          "uf": "SP",
-          "cep": "01310-200"
+          "logradouro": "Rua do Carro",
+          "numero": "456",
+          "bairro": "Indústria",
+          "municipio": "Belo Horizonte",
+          "uf": "MG",
+          "cep": "31000-000"
         }
       },
       "destinatario": {
-        "cnpj": "98765432000188",
-        "nome": "Empresa Destinatária SA",
+        "cnpj": "87654321000177",
+        "nome": "Mariana Ferreira",
         "endereco": {
-          "logradouro": "Avenida Exemplo",
-          "numero": "456",
-          "bairro": "Bairro Exemplo",
-          "municipio": "Rio de Janeiro",
-          "uf": "RJ",
-          "cep": "20000-000"
+          "logradouro": "Avenida dos Autonomistas",
+          "numero": "789",
+          "bairro": "Vila Yara",
+          "municipio": "Osasco",
+          "uf": "SP",
+          "cep": "06020-000"
         }
       },
-      "dataEmissao": "2023-08-05T08:30:00",
-      "valorTotal": 850.5,
+      "dataEmissao": "2023-10-15T11:00:00",
+      "valorTotal": 3000.0,
       "impostos": {
-        "icms": 120.3,
-        "ipi": 25.5,
-        "pis": 7.5,
-        "cofins": 12.2
+        "icms": 200.0,
+        "ipi": 80.0,
+        "pis": 30.0,
+        "cofins": 40.0
       },
       "produtos": [
         {
-          "descricao": "Produto C",
-          "codigo": "003",
-          "ncm": "56341234",
-          "quantidade": 3,
-          "valorUnitario": 283.5,
-          "valorTotal": 850.5
+          "descricao": "Filtro de Óleo",
+          "codigo": "004",
+          "ncm": "84212300",
+          "quantidade": 20,
+          "valorUnitario": 50.0,
+          "valorTotal": 1000.0
+        },
+        {
+          "descricao": "Pneu 175/65 R14",
+          "codigo": "005",
+          "ncm": "40111000",
+          "quantidade": 10,
+          "valorUnitario": 200.0,
+          "valorTotal": 2000.0
         }
       ],
       "numeroNFe": "1001",
@@ -106,47 +122,63 @@
     },
     {
       "id": 3,
-      "chaveAcesso": "35170712345678000195550010000000031000000031",
+      "chaveAcesso": "35170709876543000195550010000000011000000034",
       "emitente": {
-        "cnpj": "32345678000177",
-        "nome": "Terceira Empresa Ltda",
+        "cnpj": "34567890000177",
+        "nome": "Atacadão de Alimentos LTDA",
         "endereco": {
-          "logradouro": "Rua das Flores",
-          "numero": "789",
-          "bairro": "Jardim",
-          "municipio": "Curitiba",
-          "uf": "PR",
-          "cep": "80000-000"
+          "logradouro": "Rua do Comércio",
+          "numero": "999",
+          "bairro": "Mercado",
+          "municipio": "Fortaleza",
+          "uf": "CE",
+          "cep": "60000-000"
         }
       },
       "destinatario": {
-        "cnpj": "98765432000188",
-        "nome": "Empresa Destinatária SA",
+        "cnpj": "76543210987654",
+        "nome": "Gabriel Santos",
         "endereco": {
-          "logradouro": "Avenida Exemplo",
-          "numero": "456",
-          "bairro": "Bairro Exemplo",
-          "municipio": "Rio de Janeiro",
-          "uf": "RJ",
-          "cep": "20000-000"
+          "logradouro": "Rua dos Palmares",
+          "numero": "567",
+          "bairro": "Jardim América",
+          "municipio": "Recife",
+          "uf": "PE",
+          "cep": "52000-000"
         }
       },
-      "dataEmissao": "2023-09-10T14:45:00",
-      "valorTotal": 1200.0,
+      "dataEmissao": "2023-10-16T12:00:00",
+      "valorTotal": 5600.0,
       "impostos": {
-        "icms": 160.0,
-        "ipi": 40.0,
-        "pis": 12.0,
-        "cofins": 20.0
+        "icms": 450.0,
+        "ipi": 110.0,
+        "pis": 60.0,
+        "cofins": 70.0
       },
       "produtos": [
         {
-          "descricao": "Produto D",
-          "codigo": "004",
-          "ncm": "34567890",
-          "quantidade": 8,
-          "valorUnitario": 150.0,
-          "valorTotal": 1200.0
+          "descricao": "Farinha de Trigo 5kg",
+          "codigo": "006",
+          "ncm": "11010010",
+          "quantidade": 100,
+          "valorUnitario": 20.0,
+          "valorTotal": 2000.0
+        },
+        {
+          "descricao": "Açúcar Cristal 1kg",
+          "codigo": "007",
+          "ncm": "17019900",
+          "quantidade": 100,
+          "valorUnitario": 15.0,
+          "valorTotal": 1500.0
+        },
+        {
+          "descricao": "Leite em Pó Integral 400g",
+          "codigo": "008",
+          "ncm": "04021010",
+          "quantidade": 200,
+          "valorUnitario": 10.5,
+          "valorTotal": 2100.0
         }
       ],
       "numeroNFe": "1002",
@@ -154,50 +186,282 @@
     },
     {
       "id": 4,
-      "chaveAcesso": "35170712345678000195550010000000041000000041",
+      "chaveAcesso": "35170798765432000195550010000000011000000045",
       "emitente": {
-        "cnpj": "42345678000188",
-        "nome": "Quarta Empresa Ltda",
+        "cnpj": "45678901000166",
+        "nome": "Tech Solutions SA",
         "endereco": {
-          "logradouro": "Rua das Palmeiras",
-          "numero": "321",
-          "bairro": "Centro",
-          "municipio": "Belo Horizonte",
-          "uf": "MG",
-          "cep": "30000-000"
+          "logradouro": "Avenida Tecnológica",
+          "numero": "1122",
+          "bairro": "Inovação",
+          "municipio": "Campinas",
+          "uf": "SP",
+          "cep": "13050-000"
         }
       },
       "destinatario": {
-        "cnpj": "98765432000188",
-        "nome": "Empresa Destinatária SA",
+        "cnpj": "65432109876543",
+        "nome": "Ana Clara Lima",
         "endereco": {
-          "logradouro": "Avenida Exemplo",
-          "numero": "456",
-          "bairro": "Bairro Exemplo",
-          "municipio": "Rio de Janeiro",
-          "uf": "RJ",
-          "cep": "20000-000"
+          "logradouro": "Rua dos Pioneiros",
+          "numero": "345",
+          "bairro": "Vila Nova",
+          "municipio": "Ribeirão Preto",
+          "uf": "SP",
+          "cep": "14020-000"
         }
       },
-      "dataEmissao": "2023-07-22T09:15:00",
-      "valorTotal": 950.0,
+      "dataEmissao": "2023-10-17T14:00:00",
+      "valorTotal": 8000.0,
       "impostos": {
-        "icms": 130.0,
-        "ipi": 30.0,
-        "pis": 9.5,
-        "cofins": 15.5
+        "icms": 600.0,
+        "ipi": 150.0,
+        "pis": 80.0,
+        "cofins": 90.0
       },
       "produtos": [
         {
-          "descricao": "Produto E",
-          "codigo": "005",
-          "ncm": "67890123",
-          "quantidade": 5,
-          "valorUnitario": 190.0,
-          "valorTotal": 950.0
+          "descricao": "Notebook 16GB RAM",
+          "codigo": "009",
+          "ncm": "84713012",
+          "quantidade": 10,
+          "valorUnitario": 3000.0,
+          "valorTotal": 30000.0
+        },
+        {
+          "descricao": "Monitor 24''",
+          "codigo": "010",
+          "ncm": "85285110",
+          "quantidade": 15,
+          "valorUnitario": 1000.0,
+          "valorTotal": 15000.0
         }
       ],
       "numeroNFe": "1003",
+      "status": "Autorizada"
+    },
+    {
+      "id": 5,
+      "chaveAcesso": "35170787654321000195550010000000011000000056",
+      "emitente": {
+        "cnpj": "56789012000155",
+        "nome": "Fashion Store Ltda",
+        "endereco": {
+          "logradouro": "Rua das Modas",
+          "numero": "890",
+          "bairro": "Centro",
+          "municipio": "Salvador",
+          "uf": "BA",
+          "cep": "40000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "54321098765432",
+        "nome": "José Silva",
+        "endereco": {
+          "logradouro": "Avenida Brasil",
+          "numero": "678",
+          "bairro": "Alphaville",
+          "municipio": "São Paulo",
+          "uf": "SP",
+          "cep": "06540-000"
+        }
+      },
+      "dataEmissao": "2023-10-18T15:00:00",
+      "valorTotal": 2500.0,
+      "impostos": {
+        "icms": 200.0,
+        "ipi": 60.0,
+        "pis": 30.0,
+        "cofins": 40.0
+      },
+      "produtos": [
+        {
+          "descricao": "Camiseta Básica",
+          "codigo": "011",
+          "ncm": "61091000",
+          "quantidade": 50,
+          "valorUnitario": 25.0,
+          "valorTotal": 1250.0
+        },
+        {
+          "descricao": "Calça Jeans",
+          "codigo": "012",
+          "ncm": "62034200",
+          "quantidade": 40,
+          "valorUnitario": 50.0,
+          "valorTotal": 2000.0
+        }
+      ],
+      "numeroNFe": "1004",
+      "status": "Autorizada"
+    },
+    {
+      "id": 6,
+      "chaveAcesso": "35170776543210000195550010000000011000000067",
+      "emitente": {
+        "cnpj": "67890123000144",
+        "nome": "Agro Pecuária Brasil SA",
+        "endereco": {
+          "logradouro": "Estrada Rural",
+          "numero": "55",
+          "bairro": "Campo Verde",
+          "municipio": "Goiânia",
+          "uf": "GO",
+          "cep": "74000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "43210987654321",
+        "nome": "Fernanda Souza",
+        "endereco": {
+          "logradouro": "Rua Verde",
+          "numero": "321",
+          "bairro": "Jardins",
+          "municipio": "São Luís",
+          "uf": "MA",
+          "cep": "65000-000"
+        }
+      },
+      "dataEmissao": "2023-10-19T16:00:00",
+      "valorTotal": 15000.0,
+      "impostos": {
+        "icms": 1200.0,
+        "ipi": 400.0,
+        "pis": 150.0,
+        "cofins": 200.0
+      },
+      "produtos": [
+        {
+          "descricao": "Sementes de Soja",
+          "codigo": "013",
+          "ncm": "12019000",
+          "quantidade": 100,
+          "valorUnitario": 100.0,
+          "valorTotal": 10000.0
+        },
+        {
+          "descricao": "Fertilizante Nitrogenado",
+          "codigo": "014",
+          "ncm": "31021000",
+          "quantidade": 50,
+          "valorUnitario": 100.0,
+          "valorTotal": 5000.0
+        }
+      ],
+      "numeroNFe": "1005",
+      "status": "Autorizada"
+    },
+    {
+      "id": 7,
+      "chaveAcesso": "35170765432100000195550010000000011000000078",
+      "emitente": {
+        "cnpj": "78901234000133",
+        "nome": "Construtora Alfa Ltda",
+        "endereco": {
+          "logradouro": "Rua da Obra",
+          "numero": "200",
+          "bairro": "Centro",
+          "municipio": "Porto Alegre",
+          "uf": "RS",
+          "cep": "90000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "32109876543210",
+        "nome": "Paulo Henrique Costa",
+        "endereco": {
+          "logradouro": "Avenida das Nações",
+          "numero": "500",
+          "bairro": "Parque Central",
+          "municipio": "Blumenau",
+          "uf": "SC",
+          "cep": "89000-000"
+        }
+      },
+      "dataEmissao": "2023-10-20T17:00:00",
+      "valorTotal": 12000.0,
+      "impostos": {
+        "icms": 900.0,
+        "ipi": 350.0,
+        "pis": 100.0,
+        "cofins": 150.0
+      },
+      "produtos": [
+        {
+          "descricao": "Cimento 50kg",
+          "codigo": "015",
+          "ncm": "25231000",
+          "quantidade": 100,
+          "valorUnitario": 50.0,
+          "valorTotal": 5000.0
+        },
+        {
+          "descricao": "Tijolo Baiano",
+          "codigo": "016",
+          "ncm": "69041000",
+          "quantidade": 10000,
+          "valorUnitario": 0.7,
+          "valorTotal": 7000.0
+        }
+      ],
+      "numeroNFe": "1006",
+      "status": "Autorizada"
+    },
+    {
+      "id": 8,
+      "chaveAcesso": "35170754321000000195550010000000011000000089",
+      "emitente": {
+        "cnpj": "89012345000122",
+        "nome": "Livraria Saber Ltda",
+        "endereco": {
+          "logradouro": "Rua do Conhecimento",
+          "numero": "111",
+          "bairro": "Educação",
+          "municipio": "Brasília",
+          "uf": "DF",
+          "cep": "70000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "21098765432109",
+        "nome": "Rafael Gonçalves",
+        "endereco": {
+          "logradouro": "Rua dos Estudantes",
+          "numero": "600",
+          "bairro": "Universitário",
+          "municipio": "São Carlos",
+          "uf": "SP",
+          "cep": "13560-000"
+        }
+      },
+      "dataEmissao": "2023-10-21T18:00:00",
+      "valorTotal": 5000.0,
+      "impostos": {
+        "icms": 350.0,
+        "ipi": 120.0,
+        "pis": 50.0,
+        "cofins": 70.0
+      },
+      "produtos": [
+        {
+          "descricao": "Livro: Programação em JavaScript",
+          "codigo": "017",
+          "ncm": "49019900",
+          "quantidade": 100,
+          "valorUnitario": 40.0,
+          "valorTotal": 4000.0
+        },
+        {
+          "descricao": "Caderno Universitário 200 folhas",
+          "codigo": "018",
+          "ncm": "48201000",
+          "quantidade": 100,
+          "valorUnitario": 10.0,
+          "valorTotal": 1000.0
+        }
+      ],
+      "numeroNFe": "1007",
       "status": "Autorizada"
     }
   ]
