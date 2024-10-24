@@ -3,48 +3,42 @@
 import { useState } from "react"
 import Header from "./_components/header"
 import Search from "./_components/search"
-import InvoiceItem from "./_components/invoiceItem"
 
 import axiosClient from "./_services/axiosClient"
 import { NFes } from "./_interfaces/dataInterface"
 import useAxios from "./_hooks/useAxios"
+import InvoiceList from "./_components/invoiceList"
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState<string>("")
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(e.target.value)
   }
+
   const {
     data: invoices,
     loading,
     error,
-  } = useAxios({
+  } = useAxios<NFes[]>({
     axiosClient,
     method: "get",
-    url: "/nfes",
+    url: `/nfes`,
   })
 
-  if (loading) return <div>Carregando...</div>
-  if (error) return <div>{error}</div>
-
   return (
-    <main className="h-screen w-screen">
+    <main className="flex h-screen w-screen flex-col">
       <Header />
-      <div className="grid grid-cols-3 max-md:grid-cols-1">
-        <section className="col-span-2 px-5 py-6">
+      <div className="grid grow grid-cols-3 overflow-y-scroll max-md:grid-cols-1">
+        <section className="col-span-2 grow px-5 py-6">
           <div className="mb-6 flex w-full justify-between max-md:flex-col max-md:gap-3">
             <h2 className="text-lg font-semibold">Suas NF-es</h2>
             <Search value={searchTerm} onChange={handleSearchChange} />
           </div>
-          <div className="space-y-3">
-            {Array.isArray(invoices) ? (
-              invoices.map((invoice: NFes) => (
-                <InvoiceItem key={invoice.id} invoice={invoice} />
-              ))
-            ) : (
-              <div>Nenhuma NF-e encontrada</div>
-            )}
-          </div>
+          <InvoiceList
+            invoices={invoices}
+            error={error ?? ""}
+            loading={loading}
+          />
         </section>
         <section className="h-full bg-[#F9FAFC]"></section>
       </div>
