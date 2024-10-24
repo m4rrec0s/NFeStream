@@ -463,6 +463,246 @@
       ],
       "numeroNFe": "1007",
       "status": "Autorizada"
+    },
+    {
+      "id": 9,
+      "chaveAcesso": "35170954321000000195550020000000021000000090",
+      "emitente": {
+        "cnpj": "78123456000133",
+        "nome": "Papelaria Estudantil Ltda",
+        "endereco": {
+          "logradouro": "Avenida do Saber",
+          "numero": "222",
+          "bairro": "Centro",
+          "municipio": "Rio de Janeiro",
+          "uf": "RJ",
+          "cep": "20000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "32198765432108",
+        "nome": "Ana Maria Silva",
+        "endereco": {
+          "logradouro": "Rua dos Universitários",
+          "numero": "501",
+          "bairro": "Vila Estudantil",
+          "municipio": "São Paulo",
+          "uf": "SP",
+          "cep": "01000-000"
+        }
+      },
+      "dataEmissao": "2023-10-22T12:00:00",
+      "valorTotal": 3000.0,
+      "impostos": {
+        "icms": 210.0,
+        "ipi": 90.0,
+        "pis": 30.0,
+        "cofins": 40.0
+      },
+      "produtos": [
+        {
+          "descricao": "Livro: Introdução à Programação",
+          "codigo": "019",
+          "ncm": "49019900",
+          "quantidade": 60,
+          "valorUnitario": 50.0,
+          "valorTotal": 3000.0
+        }
+      ],
+      "numeroNFe": "1008",
+      "status": "Autorizada"
+    },
+    {
+      "id": 10,
+      "chaveAcesso": "35171054321000000195550030000000031000000091",
+      "emitente": {
+        "cnpj": "67123456000144",
+        "nome": "TecnoProdutos Ltda",
+        "endereco": {
+          "logradouro": "Rua Tecnológica",
+          "numero": "303",
+          "bairro": "Inovação",
+          "municipio": "Campinas",
+          "uf": "SP",
+          "cep": "13000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "43198765432107",
+        "nome": "João Paulo Oliveira",
+        "endereco": {
+          "logradouro": "Rua da Tecnologia",
+          "numero": "101",
+          "bairro": "Desenvolvimento",
+          "municipio": "Sorocaba",
+          "uf": "SP",
+          "cep": "18000-000"
+        }
+      },
+      "dataEmissao": "2023-10-23T15:30:00",
+      "valorTotal": 4500.0,
+      "impostos": {
+        "icms": 315.0,
+        "ipi": 130.0,
+        "pis": 60.0,
+        "cofins": 80.0
+      },
+      "produtos": [
+        {
+          "descricao": "Mouse Óptico USB",
+          "codigo": "020",
+          "ncm": "84716053",
+          "quantidade": 300,
+          "valorUnitario": 15.0,
+          "valorTotal": 4500.0
+        }
+      ],
+      "numeroNFe": "1009",
+      "status": "Autorizada"
+    },
+    {
+      "id": 11,
+      "chaveAcesso": "35171154321000000195550040000000041000000092",
+      "emitente": {
+        "cnpj": "56123456000155",
+        "nome": "Loja dos Eletrônicos",
+        "endereco": {
+          "logradouro": "Avenida Central",
+          "numero": "404",
+          "bairro": "Comércio",
+          "municipio": "Fortaleza",
+          "uf": "CE",
+          "cep": "60000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "54198765432106",
+        "nome": "Carlos Eduardo Lima",
+        "endereco": {
+          "logradouro": "Rua da Economia",
+          "numero": "55",
+          "bairro": "Financeiro",
+          "municipio": "Belo Horizonte",
+          "uf": "MG",
+          "cep": "30000-000"
+        }
+      },
+      "dataEmissao": "2023-10-24T10:00:00",
+      "valorTotal": 7000.0,
+      "impostos": {
+        "icms": 490.0,
+        "ipi": 200.0,
+        "pis": 90.0,
+        "cofins": 120.0
+      },
+      "produtos": [
+        {
+          "descricao": "Monitor LED 24 polegadas",
+          "codigo": "021",
+          "ncm": "85285120",
+          "quantidade": 50,
+          "valorUnitario": 140.0,
+          "valorTotal": 7000.0
+        }
+      ],
+      "numeroNFe": "1010",
+      "status": "Autorizada"
+    },
+    {
+      "id": 12,
+      "chaveAcesso": "35171254321000000195550050000000051000000093",
+      "emitente": {
+        "cnpj": "45123456000166",
+        "nome": "Distribuidora Alimentícia Ltda",
+        "endereco": {
+          "logradouro": "Estrada do Mercado",
+          "numero": "505",
+          "bairro": "Industrial",
+          "municipio": "Salvador",
+          "uf": "BA",
+          "cep": "40000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "65198765432105",
+        "nome": "Maria Clara Andrade",
+        "endereco": {
+          "logradouro": "Avenida Comercial",
+          "numero": "303",
+          "bairro": "Negócios",
+          "municipio": "Aracaju",
+          "uf": "SE",
+          "cep": "49000-000"
+        }
+      },
+      "dataEmissao": "2023-10-25T08:45:00",
+      "valorTotal": 5500.0,
+      "impostos": {
+        "icms": 385.0,
+        "ipi": 150.0,
+        "pis": 70.0,
+        "cofins": 95.0
+      },
+      "produtos": [
+        {
+          "descricao": "Pacote de Arroz 5kg",
+          "codigo": "022",
+          "ncm": "10063021",
+          "quantidade": 200,
+          "valorUnitario": 27.5,
+          "valorTotal": 5500.0
+        }
+      ],
+      "numeroNFe": "1011",
+      "status": "Autorizada"
+    },
+    {
+      "id": 13,
+      "chaveAcesso": "35171354321000000195550060000000061000000094",
+      "emitente": {
+        "cnpj": "34123456000177",
+        "nome": "Móveis Sob Medida",
+        "endereco": {
+          "logradouro": "Rua dos Artesãos",
+          "numero": "606",
+          "bairro": "Fábrica",
+          "municipio": "Curitiba",
+          "uf": "PR",
+          "cep": "80000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "76198765432104",
+        "nome": "Eduardo Pereira Santos",
+        "endereco": {
+          "logradouro": "Rua da Arquitetura",
+          "numero": "707",
+          "bairro": "Design",
+          "municipio": "Florianópolis",
+          "uf": "SC",
+          "cep": "88000-000"
+        }
+      },
+      "dataEmissao": "2023-10-26T14:00:00",
+      "valorTotal": 6200.0,
+      "impostos": {
+        "icms": 434.0,
+        "ipi": 180.0,
+        "pis": 80.0,
+        "cofins": 106.0
+      },
+      "produtos": [
+        {
+          "descricao": "Conjunto de Móveis Planejados",
+          "codigo": "023",
+          "ncm": "94033000",
+          "quantidade": 20,
+          "valorUnitario": 310.0,
+          "valorTotal": 6200.0
+        }
+      ],
+      "numeroNFe": "1012",
+      "status": "Autorizada"
     }
   ]
 }
