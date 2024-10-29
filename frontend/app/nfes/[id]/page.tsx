@@ -12,17 +12,25 @@ const NfesPage = () => {
   const router = useRouter()
 
   const {
-    data: invoice,
+    data: invoices,
     loading,
     error,
-  } = useAxios<NFes>({
+  } = useAxios<NFes[]>({
     axiosClient,
     method: "get",
-    url: `/nfes/${id}`,
+    url: `/nfes?id=${id}`,
   })
 
   if (loading) return <div>Carregando...</div>
-  if (error) return <div>{error}</div>
+  if (error)
+    return (
+      <div>{typeof error === "string" ? error : "Erro ao carregar dados"}</div>
+    )
+  const invoice = invoices ? invoices[0] : null
+
+  if (!invoice) {
+    return <div>Dados não encontrados</div>
+  }
 
   return (
     <section className="h-screen w-screen">
@@ -36,11 +44,21 @@ const NfesPage = () => {
         </Button>
       </div>
       <div className="px-5 py-6">
-        <h1 className="text-xl font-bold">Nota Fiscal {invoice?.numeroNFe}</h1>
+        <h1 className="text-xl font-bold">Nota Fiscal {invoice.numeroNFe}</h1>
         <h2 className="text-lg font-medium">
-          Emitente: {invoice?.emitente?.nome}
+          Emitente: {invoice.emitente.nome}
         </h2>
-        <p>Valor Total: {invoice?.valorTotal}</p>
+        <p>Valor Total: {invoice.valorTotal}</p>
+        <div>
+          <ul>
+            {invoice.produtos.map((produto) => (
+              <li key={produto.codigo}>
+                <p>{produto.descricao}</p>
+                <p>{produto.valorTotal}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   )
