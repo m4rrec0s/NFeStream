@@ -29,16 +29,18 @@ export default function Home() {
     <main className="flex h-screen w-screen flex-col">
       <Header />
       <div className="grid grow grid-cols-3 overflow-y-scroll max-md:grid-cols-1">
-        <section className="col-span-2 grow px-5 py-6">
-          <div className="mb-6 flex w-full justify-between max-md:flex-col max-md:gap-3">
+        <section className="col-span-2 flex grow flex-col overflow-hidden px-5 py-6">
+          <div className="mb-6 flex w-full items-center justify-between max-md:flex-col max-md:gap-3">
             <h2 className="text-lg font-semibold">Suas NF-es</h2>
             <Search value={searchTerm} onChange={handleSearchChange} />
           </div>
-          <InvoiceList
-            invoices={invoices}
-            error={error ?? ""}
-            loading={loading}
-          />
+          <div className="flex-grow overflow-y-auto">
+            <InvoiceList
+              invoices={invoices}
+              error={error ?? ""}
+              loading={loading}
+            />
+          </div>
         </section>
         <section className="h-full bg-[#F9FAFC]"></section>
       </div>
