@@ -26,7 +26,7 @@ const InvoiceList = ({ invoices, error, loading }: InvoiceListProps) => {
     )
 
   return (
-    <div className="space-y-3">
+    <div className="border-t border-gray-200">
       {Array.isArray(invoices) ? (
         invoices.map((invoice: NFes) => (
           <InvoiceItem key={invoice.id} invoice={invoice} />
