@@ -1,6 +1,6 @@
-import { ChevronRight, StoreIcon } from "lucide-react"
 import { NFes } from "../_interfaces/dataInterface"
 import Link from "next/link"
+import { Badge } from "./ui/badge"
 
 interface InvoiceItemProps {
   invoice: NFes
@@ -8,48 +8,43 @@ interface InvoiceItemProps {
 
 const InvoiceItem = ({ invoice }: InvoiceItemProps) => {
   return (
-    <div
-      key={invoice.id}
-      className="flex items-center justify-between rounded-lg py-1"
+    <Link
+      href={`/nfes/${invoice.id}`}
+      className="flex cursor-pointer items-center justify-between rounded-lg border-b border-gray-200 px-2 py-6 hover:bg-gray-100"
     >
-      <div className="flex items-center gap-3">
-        {invoice.valorTotal > 10000 ? (
-          <div className="rounded-full bg-red-500 p-4">
-            <StoreIcon size={20} color="white" />
-          </div>
-        ) : invoice.valorTotal > 6000 ? (
-          <div className="rounded-full bg-yellow-500 p-4">
-            <StoreIcon size={20} color="white" />
-          </div>
-        ) : invoice.valorTotal > 4000 ? (
-          <div className="rounded-full bg-green-500 p-4">
-            <StoreIcon size={20} color="white" />
-          </div>
-        ) : (
-          <div className="rounded-full bg-blue-500 p-4">
-            <StoreIcon size={20} color="white" />
-          </div>
-        )}
+      <div className="flex flex-col gap-3">
         <div className="flex flex-col">
           <h3 className="text-base font-semibold">{invoice.emitente.nome}</h3>
-          {invoice.produtos.length > 1 ? (
-            <p className="text-sm font-light">
-              {invoice.produtos.length} Produtos
-            </p>
-          ) : (
-            <p className="text-sm font-light">
-              {invoice.produtos.length} Produto
-            </p>
-          )}
+          <div className="flex gap-2 text-gray-500">
+            {invoice.produtos.length > 1 ? (
+              <p className="text-sm font-light">
+                {invoice.produtos.length} Produtos
+              </p>
+            ) : (
+              <p className="text-sm font-light">
+                {invoice.produtos.length} Produto
+              </p>
+            )}
+            {" • "}
+            <p className="text-sm font-light">R$ {invoice.valorTotal}</p>
+          </div>
         </div>
+        {invoice.status === "Autorizada" ? (
+          <Badge className="w-fit bg-[#B7FFB7] text-[#1F751F]">
+            Autorizada
+          </Badge>
+        ) : (
+          <Badge className="w-fit bg-red-200 text-red-700">Pendente</Badge>
+        )}
       </div>
-      <div className="flex items-center gap-5">
-        <h3 className="text-lg font-semibold">R$ {invoice.valorTotal}</h3>
-        <Link href={`/nfes/${invoice.id}`} title="Ver NF">
-          <ChevronRight size={24} />
-        </Link>
-      </div>
-    </div>
+      <p className="text-gray-500">
+        {new Date(invoice.dataEmissao).toLocaleDateString("pt-BR", {
+          year: "numeric",
+          month: "short",
+          day: "2-digit",
+        })}
+      </p>
+    </Link>
   )
 }
 
