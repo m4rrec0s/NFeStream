@@ -703,6 +703,246 @@
       ],
       "numeroNFe": "1012",
       "status": "Autorizada"
+    },
+    {
+      "id": 14,
+      "chaveAcesso": "35171454321000000195550070000000071000000095",
+      "emitente": {
+        "cnpj": "23123456000188",
+        "nome": "Supermercado Bom Preço",
+        "endereco": {
+          "logradouro": "Avenida Central",
+          "numero": "1000",
+          "bairro": "Centro",
+          "municipio": "Rio de Janeiro",
+          "uf": "RJ",
+          "cep": "20000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "87198765432103",
+        "nome": "Pedro Alves",
+        "endereco": {
+          "logradouro": "Rua das Palmeiras",
+          "numero": "200",
+          "bairro": "Jardim",
+          "municipio": "Niterói",
+          "uf": "RJ",
+          "cep": "24000-000"
+        }
+      },
+      "dataEmissao": "2023-10-27T10:00:00",
+      "valorTotal": 3500.0,
+      "impostos": {
+        "icms": 250.0,
+        "ipi": 100.0,
+        "pis": 50.0,
+        "cofins": 70.0
+      },
+      "produtos": [
+        {
+          "descricao": "Café 1kg",
+          "codigo": "024",
+          "ncm": "09011110",
+          "quantidade": 100,
+          "valorUnitario": 35.0,
+          "valorTotal": 3500.0
+        }
+      ],
+      "numeroNFe": "1013",
+      "status": "Autorizada"
+    },
+    {
+      "id": 15,
+      "chaveAcesso": "35171554321000000195550080000000081000000096",
+      "emitente": {
+        "cnpj": "12123456000199",
+        "nome": "Loja de Brinquedos Ltda",
+        "endereco": {
+          "logradouro": "Rua das Crianças",
+          "numero": "300",
+          "bairro": "Diversão",
+          "municipio": "São Paulo",
+          "uf": "SP",
+          "cep": "01000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "98198765432102",
+        "nome": "Mariana Souza",
+        "endereco": {
+          "logradouro": "Avenida das Brincadeiras",
+          "numero": "400",
+          "bairro": "Alegria",
+          "municipio": "Campinas",
+          "uf": "SP",
+          "cep": "13000-000"
+        }
+      },
+      "dataEmissao": "2023-10-28T11:00:00",
+      "valorTotal": 2000.0,
+      "impostos": {
+        "icms": 150.0,
+        "ipi": 60.0,
+        "pis": 30.0,
+        "cofins": 40.0
+      },
+      "produtos": [
+        {
+          "descricao": "Boneca de Pano",
+          "codigo": "025",
+          "ncm": "95030099",
+          "quantidade": 50,
+          "valorUnitario": 40.0,
+          "valorTotal": 2000.0
+        }
+      ],
+      "numeroNFe": "1014",
+      "status": "Autorizada"
+    },
+    {
+      "id": 16,
+      "chaveAcesso": "35171654321000000195550090000000091000000097",
+      "emitente": {
+        "cnpj": "01123456000100",
+        "nome": "Farmácia Popular",
+        "endereco": {
+          "logradouro": "Rua da Saúde",
+          "numero": "500",
+          "bairro": "Centro",
+          "municipio": "Belo Horizonte",
+          "uf": "MG",
+          "cep": "30000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "19198765432101",
+        "nome": "Carlos Mendes",
+        "endereco": {
+          "logradouro": "Avenida dos Remédios",
+          "numero": "600",
+          "bairro": "Saúde",
+          "municipio": "Contagem",
+          "uf": "MG",
+          "cep": "32000-000"
+        }
+      },
+      "dataEmissao": "2023-10-29T12:00:00",
+      "valorTotal": 1500.0,
+      "impostos": {
+        "icms": 100.0,
+        "ipi": 40.0,
+        "pis": 20.0,
+        "cofins": 30.0
+      },
+      "produtos": [
+        {
+          "descricao": "Paracetamol 500mg",
+          "codigo": "026",
+          "ncm": "30049099",
+          "quantidade": 100,
+          "valorUnitario": 15.0,
+          "valorTotal": 1500.0
+        }
+      ],
+      "numeroNFe": "1015",
+      "status": "Autorizada"
+    },
+    {
+      "id": 17,
+      "chaveAcesso": "35171754321000000195550100000000101000000098",
+      "emitente": {
+        "cnpj": "90123456000111",
+        "nome": "Loja de Eletrônicos",
+        "endereco": {
+          "logradouro": "Avenida Digital",
+          "numero": "700",
+          "bairro": "Tecnologia",
+          "municipio": "Curitiba",
+          "uf": "PR",
+          "cep": "80000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "29198765432100",
+        "nome": "Fernanda Lima",
+        "endereco": {
+          "logradouro": "Rua dos Gadgets",
+          "numero": "800",
+          "bairro": "Inovação",
+          "municipio": "Londrina",
+          "uf": "PR",
+          "cep": "86000-000"
+        }
+      },
+      "dataEmissao": "2023-10-30T13:00:00",
+      "valorTotal": 6000.0,
+      "impostos": {
+        "icms": 450.0,
+        "ipi": 150.0,
+        "pis": 60.0,
+        "cofins": 90.0
+      },
+      "produtos": [
+        {
+          "descricao": "Smartphone 128GB",
+          "codigo": "027",
+          "ncm": "85171231",
+          "quantidade": 30,
+          "valorUnitario": 200.0,
+          "valorTotal": 6000.0
+        }
+      ],
+      "numeroNFe": "1016",
+      "status": "Autorizada"
+    },
+    {
+      "id": 18,
+      "chaveAcesso": "35171854321000000195550110000000111000000099",
+      "emitente": {
+        "cnpj": "80123456000122",
+        "nome": "Loja de Roupas",
+        "endereco": {
+          "logradouro": "Rua da Moda",
+          "numero": "900",
+          "bairro": "Estilo",
+          "municipio": "Florianópolis",
+          "uf": "SC",
+          "cep": "88000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "39198765432109",
+        "nome": "Juliana Pereira",
+        "endereco": {
+          "logradouro": "Avenida das Tendências",
+          "numero": "1000",
+          "bairro": "Fashion",
+          "municipio": "Joinville",
+          "uf": "SC",
+          "cep": "89200-000"
+        }
+      },
+      "dataEmissao": "2023-10-31T14:00:00",
+      "valorTotal": 4000.0,
+      "impostos": {
+        "icms": 300.0,
+        "ipi": 120.0,
+        "pis": 50.0,
+        "cofins": 70.0
+      },
+      "produtos": [
+        {
+          "descricao": "Vestido de Festa",
+          "codigo": "028",
+          "ncm": "62044200",
+          "quantidade": 40,
+          "valorUnitario": 100.0,
+          "valorTotal": 4000.0
+        }
+      ],
+      "numeroNFe": "1017",
+      "status": "Autorizada"
     }
   ]
 }
