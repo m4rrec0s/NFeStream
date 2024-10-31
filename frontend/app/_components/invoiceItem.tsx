@@ -1,6 +1,7 @@
 import { NFes } from "../_interfaces/dataInterface"
 import Link from "next/link"
 import { Badge } from "./ui/badge"
+import { formatCurrency } from "../_helpers/currencyConverter"
 
 interface InvoiceItemProps {
   invoice: NFes
@@ -26,7 +27,9 @@ const InvoiceItem = ({ invoice }: InvoiceItemProps) => {
               </p>
             )}
             {" • "}
-            <p className="text-sm font-light">R$ {invoice.valorTotal}</p>
+            <p className="text-sm font-light">
+              {formatCurrency(invoice.valorTotal)}
+            </p>
           </div>
         </div>
         {invoice.status === "Autorizada" ? (
