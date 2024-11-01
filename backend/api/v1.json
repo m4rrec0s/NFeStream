@@ -943,6 +943,486 @@
       ],
       "numeroNFe": "1017",
       "status": "Autorizada"
+    },
+    {
+      "id": 19,
+      "chaveAcesso": "35170854321000000195550120000000121000000100",
+      "emitente": {
+        "cnpj": "70123456000133",
+        "nome": "Loja de Calçados",
+        "endereco": {
+          "logradouro": "Rua dos Sapatos",
+          "numero": "100",
+          "bairro": "Centro",
+          "municipio": "São Paulo",
+          "uf": "SP",
+          "cep": "01000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "49198765432108",
+        "nome": "Roberto Silva",
+        "endereco": {
+          "logradouro": "Avenida dos Pés",
+          "numero": "200",
+          "bairro": "Calçados",
+          "municipio": "Campinas",
+          "uf": "SP",
+          "cep": "13000-000"
+        }
+      },
+      "dataEmissao": "2024-08-15T10:00:00",
+      "valorTotal": 3000.0,
+      "impostos": {
+        "icms": 210.0,
+        "ipi": 90.0,
+        "pis": 30.0,
+        "cofins": 40.0
+      },
+      "produtos": [
+        {
+          "descricao": "Tênis Esportivo",
+          "codigo": "029",
+          "ncm": "64041100",
+          "quantidade": 50,
+          "valorUnitario": 60.0,
+          "valorTotal": 3000.0
+        }
+      ],
+      "numeroNFe": "1018",
+      "status": "Autorizada"
+    },
+    {
+      "id": 20,
+      "chaveAcesso": "35170954321000000195550130000000131000000101",
+      "emitente": {
+        "cnpj": "60123456000144",
+        "nome": "Loja de Esportes",
+        "endereco": {
+          "logradouro": "Rua dos Atletas",
+          "numero": "300",
+          "bairro": "Esportes",
+          "municipio": "Rio de Janeiro",
+          "uf": "RJ",
+          "cep": "20000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "59198765432107",
+        "nome": "Lucas Pereira",
+        "endereco": {
+          "logradouro": "Avenida dos Campeões",
+          "numero": "400",
+          "bairro": "Atletas",
+          "municipio": "Niterói",
+          "uf": "RJ",
+          "cep": "24000-000"
+        }
+      },
+      "dataEmissao": "2024-09-10T11:00:00",
+      "valorTotal": 4500.0,
+      "impostos": {
+        "icms": 315.0,
+        "ipi": 130.0,
+        "pis": 60.0,
+        "cofins": 80.0
+      },
+      "produtos": [
+        {
+          "descricao": "Bola de Futebol",
+          "codigo": "030",
+          "ncm": "95066210",
+          "quantidade": 100,
+          "valorUnitario": 45.0,
+          "valorTotal": 4500.0
+        }
+      ],
+      "numeroNFe": "1019",
+      "status": "Autorizada"
+    },
+    {
+      "id": 21,
+      "chaveAcesso": "35171054321000000195550140000000141000000102",
+      "emitente": {
+        "cnpj": "50123456000155",
+        "nome": "Loja de Eletrônicos",
+        "endereco": {
+          "logradouro": "Rua dos Gadgets",
+          "numero": "500",
+          "bairro": "Tecnologia",
+          "municipio": "Curitiba",
+          "uf": "PR",
+          "cep": "80000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "69198765432106",
+        "nome": "Fernanda Lima",
+        "endereco": {
+          "logradouro": "Rua dos Dispositivos",
+          "numero": "600",
+          "bairro": "Inovação",
+          "municipio": "Londrina",
+          "uf": "PR",
+          "cep": "86000-000"
+        }
+      },
+      "dataEmissao": "2024-10-05T12:00:00",
+      "valorTotal": 6000.0,
+      "impostos": {
+        "icms": 450.0,
+        "ipi": 150.0,
+        "pis": 60.0,
+        "cofins": 90.0
+      },
+      "produtos": [
+        {
+          "descricao": "Tablet 64GB",
+          "codigo": "031",
+          "ncm": "84713012",
+          "quantidade": 30,
+          "valorUnitario": 200.0,
+          "valorTotal": 6000.0
+        }
+      ],
+      "numeroNFe": "1020",
+      "status": "Autorizada"
+    },
+    {
+      "id": 22,
+      "chaveAcesso": "35171054321000000195550150000000151000000103",
+      "emitente": {
+        "cnpj": "40123456000166",
+        "nome": "Loja de Móveis",
+        "endereco": {
+          "logradouro": "Rua dos Móveis",
+          "numero": "700",
+          "bairro": "Decoração",
+          "municipio": "Florianópolis",
+          "uf": "SC",
+          "cep": "88000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "79198765432105",
+        "nome": "Juliana Pereira",
+        "endereco": {
+          "logradouro": "Avenida dos Designers",
+          "numero": "800",
+          "bairro": "Estilo",
+          "municipio": "Joinville",
+          "uf": "SC",
+          "cep": "89200-000"
+        }
+      },
+      "dataEmissao": "2024-10-15T14:00:00",
+      "valorTotal": 4000.0,
+      "impostos": {
+        "icms": 300.0,
+        "ipi": 120.0,
+        "pis": 50.0,
+        "cofins": 70.0
+      },
+      "produtos": [
+        {
+          "descricao": "Sofá 3 Lugares",
+          "codigo": "032",
+          "ncm": "94016100",
+          "quantidade": 20,
+          "valorUnitario": 200.0,
+          "valorTotal": 4000.0
+        }
+      ],
+      "numeroNFe": "1021",
+      "status": "Autorizada"
+    },
+    {
+      "id": 23,
+      "chaveAcesso": "35171054321000000195550160000000161000000104",
+      "emitente": {
+        "cnpj": "30123456000177",
+        "nome": "Loja de Brinquedos",
+        "endereco": {
+          "logradouro": "Rua das Crianças",
+          "numero": "900",
+          "bairro": "Diversão",
+          "municipio": "São Paulo",
+          "uf": "SP",
+          "cep": "01000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "89198765432104",
+        "nome": "Mariana Souza",
+        "endereco": {
+          "logradouro": "Avenida das Brincadeiras",
+          "numero": "1000",
+          "bairro": "Alegria",
+          "municipio": "Campinas",
+          "uf": "SP",
+          "cep": "13000-000"
+        }
+      },
+      "dataEmissao": "2024-10-25T15:00:00",
+      "valorTotal": 2000.0,
+      "impostos": {
+        "icms": 150.0,
+        "ipi": 60.0,
+        "pis": 30.0,
+        "cofins": 40.0
+      },
+      "produtos": [
+        {
+          "descricao": "Carrinho de Controle Remoto",
+          "codigo": "033",
+          "ncm": "95030099",
+          "quantidade": 50,
+          "valorUnitario": 40.0,
+          "valorTotal": 2000.0
+        }
+      ],
+      "numeroNFe": "1022",
+      "status": "Autorizada"
+    },
+    {
+      "id": 24,
+      "chaveAcesso": "35171154321000000195550170000000171000000105",
+      "emitente": {
+        "cnpj": "20123456000188",
+        "nome": "Loja de Ferramentas",
+        "endereco": {
+          "logradouro": "Rua das Ferramentas",
+          "numero": "1100",
+          "bairro": "Construção",
+          "municipio": "Belo Horizonte",
+          "uf": "MG",
+          "cep": "30000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "99198765432103",
+        "nome": "Carlos Mendes",
+        "endereco": {
+          "logradouro": "Avenida dos Trabalhadores",
+          "numero": "1200",
+          "bairro": "Obras",
+          "municipio": "Contagem",
+          "uf": "MG",
+          "cep": "32000-000"
+        }
+      },
+      "dataEmissao": "2024-11-05T16:00:00",
+      "valorTotal": 5000.0,
+      "impostos": {
+        "icms": 350.0,
+        "ipi": 120.0,
+        "pis": 50.0,
+        "cofins": 70.0
+      },
+      "produtos": [
+        {
+          "descricao": "Furadeira Elétrica",
+          "codigo": "034",
+          "ncm": "84672100",
+          "quantidade": 50,
+          "valorUnitario": 100.0,
+          "valorTotal": 5000.0
+        }
+      ],
+      "numeroNFe": "1023",
+      "status": "Autorizada"
+    },
+    {
+      "id": 25,
+      "chaveAcesso": "35171254321000000195550180000000181000000106",
+      "emitente": {
+        "cnpj": "10123456000199",
+        "nome": "Loja de Roupas",
+        "endereco": {
+          "logradouro": "Rua da Moda",
+          "numero": "1300",
+          "bairro": "Estilo",
+          "municipio": "Florianópolis",
+          "uf": "SC",
+          "cep": "88000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "09198765432102",
+        "nome": "Juliana Pereira",
+        "endereco": {
+          "logradouro": "Avenida das Tendências",
+          "numero": "1400",
+          "bairro": "Fashion",
+          "municipio": "Joinville",
+          "uf": "SC",
+          "cep": "89200-000"
+        }
+      },
+      "dataEmissao": "2024-12-10T17:00:00",
+      "valorTotal": 4000.0,
+      "impostos": {
+        "icms": 300.0,
+        "ipi": 120.0,
+        "pis": 50.0,
+        "cofins": 70.0
+      },
+      "produtos": [
+        {
+          "descricao": "Jaqueta de Couro",
+          "codigo": "035",
+          "ncm": "42031000",
+          "quantidade": 40,
+          "valorUnitario": 100.0,
+          "valorTotal": 4000.0
+        }
+      ],
+      "numeroNFe": "1024",
+      "status": "Autorizada"
+    },
+    {
+      "id": 26,
+      "chaveAcesso": "35180154321000000195550190000000191000000107",
+      "emitente": {
+        "cnpj": "00123456000200",
+        "nome": "Loja de Informática",
+        "endereco": {
+          "logradouro": "Rua dos Computadores",
+          "numero": "1500",
+          "bairro": "Tecnologia",
+          "municipio": "São Paulo",
+          "uf": "SP",
+          "cep": "01000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "19198765432101",
+        "nome": "Carlos Mendes",
+        "endereco": {
+          "logradouro": "Avenida dos Processadores",
+          "numero": "1600",
+          "bairro": "Informática",
+          "municipio": "Campinas",
+          "uf": "SP",
+          "cep": "13000-000"
+        }
+      },
+      "dataEmissao": "2024-01-15T18:00:00",
+      "valorTotal": 8000.0,
+      "impostos": {
+        "icms": 600.0,
+        "ipi": 150.0,
+        "pis": 80.0,
+        "cofins": 90.0
+      },
+      "produtos": [
+        {
+          "descricao": "Notebook 16GB RAM",
+          "codigo": "036",
+          "ncm": "84713012",
+          "quantidade": 10,
+          "valorUnitario": 800.0,
+          "valorTotal": 8000.0
+        }
+      ],
+      "numeroNFe": "1025",
+      "status": "Autorizada"
+    },
+    {
+      "id": 27,
+      "chaveAcesso": "35180254321000000195550200000000201000000108",
+      "emitente": {
+        "cnpj": "90123456000211",
+        "nome": "Loja de Eletrônicos",
+        "endereco": {
+          "logradouro": "Avenida Digital",
+          "numero": "1700",
+          "bairro": "Tecnologia",
+          "municipio": "Curitiba",
+          "uf": "PR",
+          "cep": "80000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "29198765432100",
+        "nome": "Fernanda Lima",
+        "endereco": {
+          "logradouro": "Rua dos Gadgets",
+          "numero": "1800",
+          "bairro": "Inovação",
+          "municipio": "Londrina",
+          "uf": "PR",
+          "cep": "86000-000"
+        }
+      },
+      "dataEmissao": "2024-02-20T19:00:00",
+      "valorTotal": 6000.0,
+      "impostos": {
+        "icms": 450.0,
+        "ipi": 150.0,
+        "pis": 60.0,
+        "cofins": 90.0
+      },
+      "produtos": [
+        {
+          "descricao": "Smartphone 128GB",
+          "codigo": "037",
+          "ncm": "85171231",
+          "quantidade": 30,
+          "valorUnitario": 200.0,
+          "valorTotal": 6000.0
+        }
+      ],
+      "numeroNFe": "1026",
+      "status": "Autorizada"
+    },
+    {
+      "id": 28,
+      "chaveAcesso": "35180354321000000195550210000000211000000109",
+      "emitente": {
+        "cnpj": "80123456000222",
+        "nome": "Loja de Roupas",
+        "endereco": {
+          "logradouro": "Rua da Moda",
+          "numero": "1900",
+          "bairro": "Estilo",
+          "municipio": "Florianópolis",
+          "uf": "SC",
+          "cep": "88000-000"
+        }
+      },
+      "destinatario": {
+        "cnpj": "39198765432109",
+        "nome": "Juliana Pereira",
+        "endereco": {
+          "logradouro": "Avenida das Tendências",
+          "numero": "2000",
+          "bairro": "Fashion",
+          "municipio": "Joinville",
+          "uf": "SC",
+          "cep": "89200-000"
+        }
+      },
+      "dataEmissao": "2024-03-25T20:00:00",
+      "valorTotal": 4000.0,
+      "impostos": {
+        "icms": 300.0,
+        "ipi": 120.0,
+        "pis": 50.0,
+        "cofins": 70.0
+      },
+      "produtos": [
+        {
+          "descricao": "Vestido de Festa",
+          "codigo": "038",
+          "ncm": "62044200",
+          "quantidade": 40,
+          "valorUnitario": 100.0,
+          "valorTotal": 4000.0
+        }
+      ],
+      "numeroNFe": "1027",
+      "status": "Autorizada"
     }
   ]
 }
