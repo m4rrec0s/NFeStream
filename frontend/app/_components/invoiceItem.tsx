@@ -33,11 +33,13 @@ const InvoiceItem = ({ invoice }: InvoiceItemProps) => {
           </div>
         </div>
         {invoice.status === "Autorizada" ? (
-          <Badge className="w-fit bg-[#B7FFB7] text-[#1F751F]">
+          <Badge className="w-fit bg-[#B7FFB7] text-[#1F751F] hover:bg-[#1F751F] hover:text-[#B7FFB7]">
             Autorizada
           </Badge>
         ) : (
-          <Badge className="w-fit bg-red-200 text-red-700">Pendente</Badge>
+          <Badge className="w-fit bg-red-200 text-red-700 hover:bg-red-700 hover:text-red-200">
+            Pendente
+          </Badge>
         )}
       </div>
       <p className="text-gray-500">
