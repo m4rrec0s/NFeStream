@@ -2,7 +2,7 @@
 
 import { FileInput, Label } from "flowbite-react"
 
-export function DropZoneFile() {
+const DropZoneFile = () => {
   return (
     <div className="flex w-full items-center justify-center">
       <Label
@@ -38,3 +38,5 @@ export function DropZoneFile() {
     </div>
   )
 }
+
+export default DropZoneFile
