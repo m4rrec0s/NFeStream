@@ -28,14 +28,14 @@ const Banner = ({ montherinvoices, user }: BannerProps) => {
           href="/profile"
           className="flex items-center gap-2 rounded bg-black px-4 py-2 text-white shadow-md transition duration-300 hover:bg-gray-800"
         >
-          <span>Ver perfil</span>
+          <span className="text-sm">Ver perfil</span>
           <User2Icon size={16} />
         </Link>
         <Link
           href="/upload"
           className="flex items-center gap-2 rounded bg-white px-4 py-2 text-black shadow-md transition duration-300 hover:bg-gray-200"
         >
-          <span>Adicionar nova NF-e</span>
+          <span className="text-sm">Adicionar nova NF-e</span>
           <Plus size={16} />
         </Link>
       </div>
