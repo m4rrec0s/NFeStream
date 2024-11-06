@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Header from "./_components/header"
 import Search from "./_components/search"
 
@@ -17,6 +17,7 @@ export default function Home() {
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(e.target.value)
   }
+  const [page, setPage] = useState<number>(1)
 
   const user = "Marcos Henrique"
 
@@ -27,14 +28,33 @@ export default function Home() {
   } = useAxios<NFes[]>({
     axiosClient,
     method: "get",
+    url: `/nfes?page=${page}&_limit=8`,
+  })
+
+  const { data: invoicesQuantity } = useAxios<NFes[]>({
+    axiosClient,
+    method: "get",
     url: `/nfes`,
   })
 
-  const montherinvoices = invoices?.filter(
+  const montherinvoices = invoicesQuantity?.filter(
     (invoice) =>
       new Date(invoice.dataEmissao).getMonth() === new Date().getMonth() &&
       new Date(invoice.dataEmissao).getFullYear() === new Date().getFullYear(),
   )
+
+  useEffect(() => {
+    const intersectionObserver = new IntersectionObserver((entries) => {
+      if (entries.some((entry) => entry.isIntersecting)) {
+        console.log("Sentinela visível")
+        setPage((prev) => prev + 1)
+      }
+    })
+    intersectionObserver.observe(document.getElementById("sentinel") as Element)
+    return () => {
+      intersectionObserver.disconnect()
+    }
+  }, [page])
 
   return (
     <main className="flex h-screen w-screen flex-col [&::-webkit-scrollbar]:hidden">
@@ -45,12 +65,13 @@ export default function Home() {
             <h2 className="text-lg font-semibold">Suas NF-es</h2>
             <Search value={searchTerm} onChange={handleSearchChange} />
           </div>
-          <div className="flex-grow overflow-y-auto">
+          <div className="flex-grow overflow-y-auto [&::-webkit-scrollbar]:hidden">
             <InvoiceList
               invoices={invoices}
               error={error ?? ""}
               loading={loading}
             />
+            <div id="sentinel" />
           </div>
         </section>
         <section className="flex-grow overflow-hidden bg-[#F9FAFC] max-md:hidden">
@@ -64,7 +85,7 @@ export default function Home() {
                 <div className="flex items-center justify-between rounded-lg bg-gray-100 p-2 shadow-sm">
                   <p className="text-sm text-gray-500">Total de NF-es</p>
                   <p className="text-base font-semibold text-gray-800">
-                    {invoices?.length}
+                    {invoicesQuantity?.length}
                   </p>
                 </div>
                 <div className="flex items-center justify-between rounded-lg bg-gray-100 p-2 shadow-sm">
@@ -73,7 +94,7 @@ export default function Home() {
                   </p>
                   <p className="text-base font-semibold text-gray-800">
                     {
-                      invoices?.filter(
+                      invoicesQuantity?.filter(
                         (invoice) =>
                           invoice.status.toUpperCase() === "AUTORIZADA",
                       ).length
@@ -86,7 +107,7 @@ export default function Home() {
                   </p>
                   <p className="text-base font-semibold text-gray-800">
                     {
-                      invoices?.filter(
+                      invoicesQuantity?.filter(
                         (invoice) =>
                           invoice.status.toUpperCase() === "PENDENTE",
                       ).length
@@ -100,7 +121,7 @@ export default function Home() {
                   </p>
                   <p className="text-base font-semibold text-gray-800">
                     {formatCurrency(
-                      invoices
+                      invoicesQuantity
                         ?.filter(
                           (invoice) =>
                             new Date(invoice.dataEmissao).getMonth() ===
