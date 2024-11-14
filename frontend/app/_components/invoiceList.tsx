@@ -1,13 +1,77 @@
+import { useEffect, useRef, useState } from "react"
 import { NFes } from "../_interfaces/dataInterface"
 import InvoiceItem from "./invoiceItem"
 
 interface InvoiceListProps {
-  invoices: NFes[] | null
-  error: string
-  loading: boolean
+  isLoading: (loading: boolean) => void
 }
 
-const InvoiceList = ({ invoices, error, loading }: InvoiceListProps) => {
+const InvoiceList = ({ isLoading }: InvoiceListProps) => {
+  const [invoices, setInvoices] = useState<NFes[]>([])
+  const [page, setPage] = useState<number>(1)
+  const [invoicesQuantity, setInvoicesQuantity] = useState<number>(0)
+  const [invoicesPage, setInvoicesPage] = useState<number>(10)
+  const [totalPage, setTotalPage] = useState<number>(0)
+  const [loading, setLoading] = useState<boolean>(true)
+  const [error, setError] = useState<string>("")
+
+  useEffect(() => {
+    getInvoices()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [page])
+
+  const invoicesRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      isLoading(loading && page === 1)
+      if (
+        invoicesRef.current &&
+        invoicesRef.current.scrollTop + invoicesRef.current.clientHeight >=
+          invoicesRef.current.scrollHeight &&
+        page < totalPage &&
+        !loading
+      ) {
+        setPage((prevPage) => prevPage + 1)
+      }
+    }
+
+    const invoicesDiv = invoicesRef.current
+    if (invoicesDiv) {
+      invoicesDiv.addEventListener("scroll", handleScroll)
+    }
+
+    return () => {
+      if (invoicesDiv) {
+        invoicesDiv.removeEventListener("scroll", handleScroll)
+      }
+    }
+  }, [page, totalPage, loading, isLoading])
+
+  const getInvoices = () => {
+    setLoading(true)
+    fetch(
+      `http://localhost:3333/nfes?_page=${page}&_per_page=${invoicesPage}`,
+      {
+        method: "GET",
+      },
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        if (Array.isArray(data.data)) {
+          setInvoicesQuantity(data.items)
+          setTotalPage(data.pages)
+          setInvoices([...invoices, ...data.data])
+          setLoading(false)
+        } else {
+          setInvoices([])
+        }
+      })
+      .catch((error) => {
+        setError(error.message)
+      })
+  }
+
   if (loading)
     return (
       <div
@@ -43,24 +107,20 @@ const InvoiceList = ({ invoices, error, loading }: InvoiceListProps) => {
     )
 
   return (
-    <div className="border-t border-gray-200">
-      {invoices?.length ? (
-        invoices
-          .sort(
-            (a, b) =>
-              new Date(b.dataEmissao).getTime() -
-              new Date(a.dataEmissao).getTime(),
-          )
-          .map((invoice: NFes) => (
+    <div className="flex-grow overflow-y-auto" ref={invoicesRef}>
+      <div className="border-t border-gray-200">
+        {invoices?.length ? (
+          invoices.map((invoice: NFes) => (
             <InvoiceItem key={invoice.id} invoice={invoice} />
           ))
-      ) : (
-        <div className="h-full w-full">
-          <div className="flex h-full w-full items-center justify-center">
-            <h2 className="">Nenhuma NFes encontrada</h2>
+        ) : (
+          <div className="h-full w-full">
+            <div className="flex h-full w-full items-center justify-center">
+              <h2 className="">Nenhuma NFes encontrada</h2>
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   )
 }
