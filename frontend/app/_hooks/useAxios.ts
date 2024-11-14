@@ -26,6 +26,7 @@ export default function useAxios<T = unknown>(
   const axiosClientRef = useRef(axiosClient)
   const memoizedMoreConfigs = useMemo(
     () => moreConfigs,
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [JSON.stringify(moreConfigs)],
   )
 
