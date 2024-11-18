@@ -120,6 +120,11 @@ const InvoiceList = ({ isLoading }: InvoiceListProps) => {
             </div>
           </div>
         )}
+        {totalPage === page && !loading && (
+          <div className="flex h-full w-full items-center justify-center">
+            <h2 className="p-4 text-sm font-bold opacity-50">Fim da lista</h2>
+          </div>
+        )}
       </div>
     </div>
   )
