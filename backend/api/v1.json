@@ -5,7 +5,7 @@
       "chaveAcesso": "35170712345678000195550010000000011000000012",
       "emitente": {
         "cnpj": "12345678000199",
-        "nome": "Mercado Central Ltda",
+        "nome": "Atacadão - Comércio de Alimentos LTDA",
         "endereco": {
           "logradouro": "Avenida Paulista",
           "numero": "1500",
@@ -125,7 +125,7 @@
       "chaveAcesso": "35170709876543000195550010000000011000000034",
       "emitente": {
         "cnpj": "34567890000177",
-        "nome": "Atacadão de Alimentos LTDA",
+        "nome": "Supermercado Bom Preço",
         "endereco": {
           "logradouro": "Rua do Comércio",
           "numero": "999",
@@ -189,9 +189,9 @@
       "chaveAcesso": "35170798765432000195550010000000011000000045",
       "emitente": {
         "cnpj": "45678901000166",
-        "nome": "Tech Solutions SA",
+        "nome": "TecnoProdutos do Carlos Ltda",
         "endereco": {
-          "logradouro": "Avenida Tecnológica",
+          "logradouro": "Avenida da Tecnologia",
           "numero": "1122",
           "bairro": "Inovação",
           "municipio": "Campinas",
@@ -357,7 +357,7 @@
       "chaveAcesso": "35170765432100000195550010000000011000000078",
       "emitente": {
         "cnpj": "78901234000133",
-        "nome": "Construtora Alfa Ltda",
+        "nome": "Nal - Material de Construção Ltda",
         "endereco": {
           "logradouro": "Rua da Obra",
           "numero": "200",
@@ -413,7 +413,7 @@
       "chaveAcesso": "35170754321000000195550010000000011000000089",
       "emitente": {
         "cnpj": "89012345000122",
-        "nome": "Livraria Saber Ltda",
+        "nome": "Livraria Saber - Shopping Partage",
         "endereco": {
           "logradouro": "Rua do Conhecimento",
           "numero": "111",
@@ -469,7 +469,7 @@
       "chaveAcesso": "35170954321000000195550020000000021000000090",
       "emitente": {
         "cnpj": "78123456000133",
-        "nome": "Papelaria Estudantil Ltda",
+        "nome": "Papelaria Estudantil",
         "endereco": {
           "logradouro": "Avenida do Saber",
           "numero": "222",
@@ -517,7 +517,7 @@
       "chaveAcesso": "35171054321000000195550030000000031000000091",
       "emitente": {
         "cnpj": "67123456000144",
-        "nome": "TecnoProdutos Ltda",
+        "nome": "Informatica S.A.",
         "endereco": {
           "logradouro": "Rua Tecnológica",
           "numero": "303",
@@ -565,7 +565,7 @@
       "chaveAcesso": "35171154321000000195550040000000041000000092",
       "emitente": {
         "cnpj": "56123456000155",
-        "nome": "Loja dos Eletrônicos",
+        "nome": "Micro Games - Eletrônica e Segurança",
         "endereco": {
           "logradouro": "Avenida Central",
           "numero": "404",
@@ -661,7 +661,7 @@
       "chaveAcesso": "35171354321000000195550060000000061000000094",
       "emitente": {
         "cnpj": "34123456000177",
-        "nome": "Móveis Sob Medida",
+        "nome": "Móveis Sob Medida - Indústria e Comércio",
         "endereco": {
           "logradouro": "Rua dos Artesãos",
           "numero": "606",
@@ -709,7 +709,7 @@
       "chaveAcesso": "35171454321000000195550070000000071000000095",
       "emitente": {
         "cnpj": "23123456000188",
-        "nome": "Supermercado Bom Preço",
+        "nome": "Supermercados Ideal",
         "endereco": {
           "logradouro": "Avenida Central",
           "numero": "1000",
@@ -757,7 +757,7 @@
       "chaveAcesso": "35171554321000000195550080000000081000000096",
       "emitente": {
         "cnpj": "12123456000199",
-        "nome": "Loja de Brinquedos Ltda",
+        "nome": "Peixe Vivo - Brinquedos e Presentes",
         "endereco": {
           "logradouro": "Rua das Crianças",
           "numero": "300",
@@ -805,7 +805,7 @@
       "chaveAcesso": "35171654321000000195550090000000091000000097",
       "emitente": {
         "cnpj": "01123456000100",
-        "nome": "Farmácia Popular",
+        "nome": "RedFarma - Farmácia de Manipulação",
         "endereco": {
           "logradouro": "Rua da Saúde",
           "numero": "500",
@@ -901,7 +901,7 @@
       "chaveAcesso": "35171854321000000195550110000000111000000099",
       "emitente": {
         "cnpj": "80123456000122",
-        "nome": "Loja de Roupas",
+        "nome": "MG modas",
         "endereco": {
           "logradouro": "Rua da Moda",
           "numero": "900",
@@ -949,7 +949,7 @@
       "chaveAcesso": "35170854321000000195550120000000121000000100",
       "emitente": {
         "cnpj": "70123456000133",
-        "nome": "Loja de Calçados",
+        "nome": "Luis Calçados",
         "endereco": {
           "logradouro": "Rua dos Sapatos",
           "numero": "100",
@@ -997,7 +997,7 @@
       "chaveAcesso": "35170954321000000195550130000000131000000101",
       "emitente": {
         "cnpj": "60123456000144",
-        "nome": "Loja de Esportes",
+        "nome": "Nike Store",
         "endereco": {
           "logradouro": "Rua dos Atletas",
           "numero": "300",
@@ -1045,7 +1045,7 @@
       "chaveAcesso": "35171054321000000195550140000000141000000102",
       "emitente": {
         "cnpj": "50123456000155",
-        "nome": "Loja de Eletrônicos",
+        "nome": "Micro Games (Loja 2) - Eletrônica e Segurança",
         "endereco": {
           "logradouro": "Rua dos Gadgets",
           "numero": "500",
@@ -1093,7 +1093,7 @@
       "chaveAcesso": "35171054321000000195550150000000151000000103",
       "emitente": {
         "cnpj": "40123456000166",
-        "nome": "Loja de Móveis",
+        "nome": "Casa Dekor",
         "endereco": {
           "logradouro": "Rua dos Móveis",
           "numero": "700",
@@ -1141,7 +1141,7 @@
       "chaveAcesso": "35171054321000000195550160000000161000000104",
       "emitente": {
         "cnpj": "30123456000177",
-        "nome": "Loja de Brinquedos",
+        "nome": "Rio do Peixe - Brinquedos e Presentes",
         "endereco": {
           "logradouro": "Rua das Crianças",
           "numero": "900",
@@ -1189,7 +1189,7 @@
       "chaveAcesso": "35171154321000000195550170000000171000000105",
       "emitente": {
         "cnpj": "20123456000188",
-        "nome": "Loja de Ferramentas",
+        "nome": "Severino Ferramentas",
         "endereco": {
           "logradouro": "Rua das Ferramentas",
           "numero": "1100",
@@ -1237,7 +1237,7 @@
       "chaveAcesso": "35171254321000000195550180000000181000000106",
       "emitente": {
         "cnpj": "10123456000199",
-        "nome": "Loja de Roupas",
+        "nome": "C&A",
         "endereco": {
           "logradouro": "Rua da Moda",
           "numero": "1300",
@@ -1424,5 +1424,6 @@
       "numeroNFe": "1027",
       "status": "Autorizada"
     }
-  ]
+  ],
+  "upload": []
 }
