@@ -51,7 +51,7 @@ const InvoiceList = ({ isLoading }: InvoiceListProps) => {
   const getInvoices = () => {
     setLoading(true)
     fetch(
-      `http://localhost:3333/nfes?_page=${page}&_per_page=${invoicesPage}`,
+      `http://localhost:3333/nfes?_page=${page}&_per_page=${invoicesPage}&_sort=-dataEmissao,-views`,
       {
         method: "GET",
       },
