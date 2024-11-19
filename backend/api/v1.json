@@ -28,7 +28,7 @@
         }
       },
       "dataEmissao": "2023-10-14T10:00:00",
-      "valorTotal": 4500.5,
+      "valorTotal": 466.25,
       "impostos": {
         "icms": 300.5,
         "ipi": 100.25,
@@ -40,25 +40,33 @@
           "descricao": "Arroz 5kg",
           "codigo": "001",
           "ncm": "10062010",
-          "quantidade": 30,
+          "quantidade": 10,
           "valorUnitario": 25.0,
-          "valorTotal": 750.0
+          "valorTotal": 250.0
         },
         {
           "descricao": "Feijão 1kg",
           "codigo": "002",
           "ncm": "07133310",
-          "quantidade": 50,
+          "quantidade": 8,
           "valorUnitario": 7.0,
-          "valorTotal": 350.0
+          "valorTotal": 56.0
         },
         {
           "descricao": "Óleo de Soja 900ml",
           "codigo": "003",
           "ncm": "15079011",
-          "quantidade": 60,
+          "quantidade": 4,
           "valorUnitario": 10.0,
-          "valorTotal": 600.0
+          "valorTotal": 40.0
+        },
+        {
+          "descricao": "Açúcar 1kg",
+          "codigo": "024",
+          "ncm": "17019900",
+          "quantidade": 12,
+          "valorUnitario": 10.0,
+          "valorTotal": 120.0
         }
       ],
       "numeroNFe": "1000",
@@ -92,29 +100,29 @@
         }
       },
       "dataEmissao": "2023-10-15T11:00:00",
-      "valorTotal": 3000.0,
+      "valorTotal": 1000.0,
       "impostos": {
-        "icms": 200.0,
-        "ipi": 80.0,
-        "pis": 30.0,
-        "cofins": 40.0
+        "icms": 20.0,
+        "ipi": 60.5,
+        "pis": 5.5,
+        "cofins": 5.0
       },
       "produtos": [
         {
           "descricao": "Filtro de Óleo",
           "codigo": "004",
           "ncm": "84212300",
-          "quantidade": 20,
+          "quantidade": 2,
           "valorUnitario": 50.0,
-          "valorTotal": 1000.0
+          "valorTotal": 100.0
         },
         {
           "descricao": "Pneu 175/65 R14",
           "codigo": "005",
           "ncm": "40111000",
-          "quantidade": 10,
+          "quantidade": 4,
           "valorUnitario": 200.0,
-          "valorTotal": 2000.0
+          "valorTotal": 800.0
         }
       ],
       "numeroNFe": "1001",
@@ -148,7 +156,7 @@
         }
       },
       "dataEmissao": "2023-10-16T12:00:00",
-      "valorTotal": 5600.0,
+      "valorTotal": 500.0,
       "impostos": {
         "icms": 450.0,
         "ipi": 110.0,
@@ -160,25 +168,65 @@
           "descricao": "Farinha de Trigo 5kg",
           "codigo": "006",
           "ncm": "11010010",
-          "quantidade": 100,
+          "quantidade": 6,
           "valorUnitario": 20.0,
-          "valorTotal": 2000.0
+          "valorTotal": 120.0
         },
         {
           "descricao": "Açúcar Cristal 1kg",
           "codigo": "007",
           "ncm": "17019900",
-          "quantidade": 100,
+          "quantidade": 7,
           "valorUnitario": 15.0,
-          "valorTotal": 1500.0
+          "valorTotal": 105.0
         },
         {
           "descricao": "Leite em Pó Integral 400g",
           "codigo": "008",
           "ncm": "04021010",
-          "quantidade": 200,
+          "quantidade": 5,
           "valorUnitario": 10.5,
-          "valorTotal": 2100.0
+          "valorTotal": 52.5
+        },
+        {
+          "descricao": "Café 500g",
+          "codigo": "009",
+          "ncm": "09011100",
+          "quantidade": 8,
+          "valorUnitario": 15.0,
+          "valorTotal": 120.0
+        },
+        {
+          "descricao": "Biscoito Recheado 150g",
+          "codigo": "010",
+          "ncm": "19053100",
+          "quantidade": 10,
+          "valorUnitario": 2.0,
+          "valorTotal": 20.0
+        },
+        {
+          "descricao": "Refrigerante 2L",
+          "codigo": "011",
+          "ncm": "22021000",
+          "quantidade": 4,
+          "valorUnitario": 5.0,
+          "valorTotal": 20.0
+        },
+        {
+          "descricao": "Sabonete 90g",
+          "codigo": "012",
+          "ncm": "34011100",
+          "quantidade": 6,
+          "valorUnitario": 3.0,
+          "valorTotal": 18.0
+        },
+        {
+          "descricao": "Detergente 500ml",
+          "codigo": "013",
+          "ncm": "34022000",
+          "quantidade": 5,
+          "valorUnitario": 2.0,
+          "valorTotal": 10.0
         }
       ],
       "numeroNFe": "1002",
@@ -224,17 +272,49 @@
           "descricao": "Notebook 16GB RAM",
           "codigo": "009",
           "ncm": "84713012",
-          "quantidade": 10,
+          "quantidade": 1,
           "valorUnitario": 3000.0,
-          "valorTotal": 30000.0
+          "valorTotal": 3000.0
         },
         {
           "descricao": "Monitor 24''",
           "codigo": "010",
           "ncm": "85285110",
-          "quantidade": 15,
+          "quantidade": 1,
           "valorUnitario": 1000.0,
-          "valorTotal": 15000.0
+          "valorTotal": 1000.0
+        },
+        {
+          "descricao": "Impressora Multifuncional",
+          "codigo": "011",
+          "ncm": "84433100",
+          "quantidade": 1,
+          "valorUnitario": 2000.0,
+          "valorTotal": 2000.0
+        },
+        {
+          "descricao": "Mouse Óptico",
+          "codigo": "012",
+          "ncm": "84716053",
+          "quantidade": 1,
+          "valorUnitario": 100.0,
+          "valorTotal": 100.0
+        },
+        {
+          "descricao": "Teclado USB",
+          "codigo": "013",
+          "ncm": "84716053",
+          "quantidade": 1,
+          "valorUnitario": 100.0,
+          "valorTotal": 100.0
+        },
+        {
+          "descricao": "Caixa de Som 2.1",
+          "codigo": "014",
+          "ncm": "85182100",
+          "quantidade": 2,
+          "valorUnitario": 400.0,
+          "valorTotal": 800.0
         }
       ],
       "numeroNFe": "1003",
@@ -280,17 +360,65 @@
           "descricao": "Camiseta Básica",
           "codigo": "011",
           "ncm": "61091000",
-          "quantidade": 50,
+          "quantidade": 2,
           "valorUnitario": 25.0,
-          "valorTotal": 1250.0
+          "valorTotal": 50.0
         },
         {
           "descricao": "Calça Jeans",
           "codigo": "012",
           "ncm": "62034200",
-          "quantidade": 40,
+          "quantidade": 1,
           "valorUnitario": 50.0,
-          "valorTotal": 2000.0
+          "valorTotal": 50.0
+        },
+        {
+          "descricao": "Tênis Esportivo",
+          "codigo": "013",
+          "ncm": "64041100",
+          "quantidade": 1,
+          "valorUnitario": 100.0,
+          "valorTotal": 100.0
+        },
+        {
+          "descricao": "Relógio de Pulso",
+          "codigo": "014",
+          "ncm": "91021100",
+          "quantidade": 1,
+          "valorUnitario": 100.0,
+          "valorTotal": 100.0
+        },
+        {
+          "descricao": "Óculos de Sol",
+          "codigo": "015",
+          "ncm": "90041000",
+          "quantidade": 1,
+          "valorUnitario": 50.0,
+          "valorTotal": 50.0
+        },
+        {
+          "descricao": "Bolsa Feminina",
+          "codigo": "016",
+          "ncm": "42022100",
+          "quantidade": 1,
+          "valorUnitario": 50.0,
+          "valorTotal": 50.0
+        },
+        {
+          "descricao": "Perfume Masculino",
+          "codigo": "017",
+          "ncm": "33030000",
+          "quantidade": 1,
+          "valorUnitario": 50.0,
+          "valorTotal": 50.0
+        },
+        {
+          "descricao": "Perfume Feminino",
+          "codigo": "018",
+          "ncm": "33030000",
+          "quantidade": 1,
+          "valorUnitario": 50.0,
+          "valorTotal": 50.0
         }
       ],
       "numeroNFe": "1004",
@@ -336,17 +464,17 @@
           "descricao": "Sementes de Soja",
           "codigo": "013",
           "ncm": "12019000",
-          "quantidade": 100,
+          "quantidade": 50,
           "valorUnitario": 100.0,
-          "valorTotal": 10000.0
+          "valorTotal": 5000.0
         },
         {
           "descricao": "Fertilizante Nitrogenado",
           "codigo": "014",
           "ncm": "31021000",
-          "quantidade": 50,
+          "quantidade": 4,
           "valorUnitario": 100.0,
-          "valorTotal": 5000.0
+          "valorTotal": 400.0
         }
       ],
       "numeroNFe": "1005",
@@ -392,9 +520,9 @@
           "descricao": "Cimento 50kg",
           "codigo": "015",
           "ncm": "25231000",
-          "quantidade": 100,
-          "valorUnitario": 50.0,
-          "valorTotal": 5000.0
+          "quantidade": 25,
+          "valorUnitario": 38.0,
+          "valorTotal": 950.0
         },
         {
           "descricao": "Tijolo Baiano",
@@ -403,6 +531,62 @@
           "quantidade": 10000,
           "valorUnitario": 0.7,
           "valorTotal": 7000.0
+        },
+        {
+          "descricao": "Areia 1m³",
+          "codigo": "017",
+          "ncm": "25051000",
+          "quantidade": 10,
+          "valorUnitario": 250.0,
+          "valorTotal": 2500.0
+        },
+        {
+          "descricao": "Tinta Látex 18L",
+          "codigo": "018",
+          "ncm": "32091010",
+          "quantidade": 10,
+          "valorUnitario": 50.0,
+          "valorTotal": 500.0
+        },
+        {
+          "descricao": "Telha de Barro 2mm",
+          "codigo": "019",
+          "ncm": "69051000",
+          "quantidade": 50,
+          "valorUnitario": 20.0,
+          "valorTotal": 1000.0
+        },
+        {
+          "descricao": "Vaso Sanitário",
+          "codigo": "020",
+          "ncm": "69109000",
+          "quantidade": 5,
+          "valorUnitario": 100.0,
+          "valorTotal": 500.0
+        },
+        {
+          "descricao": "Pia de Cozinha",
+          "codigo": "021",
+          "ncm": "69101000",
+          "quantidade": 5,
+          "valorUnitario": 100.0,
+          "valorTotal": 500.0
+        },
+        {
+          "descricao": "Porta de Madeira",
+          "codigo": "022",
+          "ncm": "44182000",
+          "quantidade": 5,
+          "valorUnitario": 100.0,
+          "valorTotal": 500.0
+        },
+        {
+          "descricao": "Janela de Alumínio",
+          "codigo": "023",
+          "ncm": "76101000",
+          "quantidade": 5,
+          "valorUnitario": 100.0,
+          "valorTotal": 500.0
         }
       ],
       "numeroNFe": "1006",
@@ -448,17 +632,65 @@
           "descricao": "Livro: Programação em JavaScript",
           "codigo": "017",
           "ncm": "49019900",
-          "quantidade": 100,
+          "quantidade": 1,
           "valorUnitario": 40.0,
-          "valorTotal": 4000.0
+          "valorTotal": 40.0
         },
         {
           "descricao": "Caderno Universitário 200 folhas",
           "codigo": "018",
           "ncm": "48201000",
-          "quantidade": 100,
+          "quantidade": 2,
           "valorUnitario": 10.0,
-          "valorTotal": 1000.0
+          "valorTotal": 20.0
+        },
+        {
+          "descricao": "Caneta Esferográfica Azul",
+          "codigo": "019",
+          "ncm": "96081000",
+          "quantidade": 5,
+          "valorUnitario": 5.0,
+          "valorTotal": 25.0
+        },
+        {
+          "descricao": "Lápis Preto 2B",
+          "codigo": "020",
+          "ncm": "96091000",
+          "quantidade": 3,
+          "valorUnitario": 5.0,
+          "valorTotal": 15.0
+        },
+        {
+          "descricao": "Borracha Branca",
+          "codigo": "021",
+          "ncm": "40169900",
+          "quantidade": 2,
+          "valorUnitario": 5.0,
+          "valorTotal": 10.0
+        },
+        {
+          "descricao": "Apontador de Lápis",
+          "codigo": "022",
+          "ncm": "82141000",
+          "quantidade": 1,
+          "valorUnitario": 5.0,
+          "valorTotal": 5.0
+        },
+        {
+          "descricao": "Régua 30cm",
+          "codigo": "023",
+          "ncm": "90178010",
+          "quantidade": 3,
+          "valorUnitario": 5.0,
+          "valorTotal": 15.0
+        },
+        {
+          "descricao": "Pasta Catálogo A4",
+          "codigo": "024",
+          "ncm": "48203000",
+          "quantidade": 10,
+          "valorUnitario": 5.0,
+          "valorTotal": 50.0
         }
       ],
       "numeroNFe": "1007",
@@ -552,9 +784,57 @@
           "descricao": "Mouse Óptico USB",
           "codigo": "020",
           "ncm": "84716053",
-          "quantidade": 300,
+          "quantidade": 1,
           "valorUnitario": 15.0,
-          "valorTotal": 4500.0
+          "valorTotal": 15.0
+        },
+        {
+          "descricao": "Teclado USB ABNT2",
+          "codigo": "021",
+          "ncm": "84716053",
+          "quantidade": 1,
+          "valorUnitario": 35.0,
+          "valorTotal": 35.0
+        },
+        {
+          "descricao": "Monitor LED 19 polegadas",
+          "codigo": "022",
+          "ncm": "85285120",
+          "quantidade": 2,
+          "valorUnitario": 200.0,
+          "valorTotal": 400.0
+        },
+        {
+          "descricao": "Impressora Jato de Tinta",
+          "codigo": "023",
+          "ncm": "84433100",
+          "quantidade": 1,
+          "valorUnitario": 300.0,
+          "valorTotal": 300.0
+        },
+        {
+          "descricao": "Estabilizador 500VA",
+          "codigo": "024",
+          "ncm": "85044021",
+          "quantidade": 1,
+          "valorUnitario": 50.0,
+          "valorTotal": 50.0
+        },
+        {
+          "descricao": "Roteador Wireless 300Mbps",
+          "codigo": "025",
+          "ncm": "85176231",
+          "quantidade": 1,
+          "valorUnitario": 100.0,
+          "valorTotal": 100.0
+        },
+        {
+          "descricao": "Cabo HDMI 1.5m",
+          "codigo": "026",
+          "ncm": "85444200",
+          "quantidade": 1,
+          "valorUnitario": 10.0,
+          "valorTotal": 10.0
         }
       ],
       "numeroNFe": "1009",
@@ -597,12 +877,20 @@
       },
       "produtos": [
         {
-          "descricao": "Monitor LED 24 polegadas",
+          "descricao": "Console de Videogame",
           "codigo": "021",
-          "ncm": "85285120",
-          "quantidade": 50,
-          "valorUnitario": 140.0,
+          "ncm": "95045000",
+          "quantidade": 1,
+          "valorUnitario": 7000.0,
           "valorTotal": 7000.0
+        },
+        {
+          "descricao": "Controle Wireless",
+          "codigo": "022",
+          "ncm": "95045000",
+          "quantidade": 1,
+          "valorUnitario": 100.0,
+          "valorTotal": 100.0
         }
       ],
       "numeroNFe": "1010",
@@ -648,9 +936,57 @@
           "descricao": "Pacote de Arroz 5kg",
           "codigo": "022",
           "ncm": "10063021",
-          "quantidade": 200,
+          "quantidade": 9,
           "valorUnitario": 27.5,
-          "valorTotal": 5500.0
+          "valorTotal": 247.5
+        },
+        {
+          "descricao": "Feijão Carioca 1kg",
+          "codigo": "023",
+          "ncm": "07133900",
+          "quantidade": 5,
+          "valorUnitario": 5.0,
+          "valorTotal": 25.0
+        },
+        {
+          "descricao": "Óleo de Soja 900ml",
+          "codigo": "024",
+          "ncm": "15071000",
+          "quantidade": 10,
+          "valorUnitario": 5.0,
+          "valorTotal": 50.0
+        },
+        {
+          "descricao": "Açúcar Refinado 1kg",
+          "codigo": "025",
+          "ncm": "17019900",
+          "quantidade": 5,
+          "valorUnitario": 5.0,
+          "valorTotal": 25.0
+        },
+        {
+          "descricao": "Café Torrado e Moído 500g",
+          "codigo": "026",
+          "ncm": "09011100",
+          "quantidade": 5,
+          "valorUnitario": 10.0,
+          "valorTotal": 50.0
+        },
+        {
+          "descricao": "Leite Longa Vida 1L",
+          "codigo": "027",
+          "ncm": "04011000",
+          "quantidade": 10,
+          "valorUnitario": 3.0,
+          "valorTotal": 30.0
+        },
+        {
+          "descricao": "Biscoito Recheado 150g",
+          "codigo": "028",
+          "ncm": "19053100",
+          "quantidade": 10,
+          "valorUnitario": 2.0,
+          "valorTotal": 20.0
         }
       ],
       "numeroNFe": "1011",
@@ -696,9 +1032,73 @@
           "descricao": "Conjunto de Móveis Planejados",
           "codigo": "023",
           "ncm": "94033000",
-          "quantidade": 20,
-          "valorUnitario": 310.0,
-          "valorTotal": 6200.0
+          "quantidade": 1,
+          "valorUnitario": 500.0,
+          "valorTotal": 500.0
+        },
+        {
+          "descricao": "Sofá 3 Lugares",
+          "codigo": "024",
+          "ncm": "94016100",
+          "quantidade": 1,
+          "valorUnitario": 1000.0,
+          "valorTotal": 1000.0
+        },
+        {
+          "descricao": "Mesa de Jantar 6 Lugares",
+          "codigo": "025",
+          "ncm": "94036000",
+          "quantidade": 1,
+          "valorUnitario": 1000.0,
+          "valorTotal": 1000.0
+        },
+        {
+          "descricao": "Cadeira Estofada",
+          "codigo": "026",
+          "ncm": "94017100",
+          "quantidade": 6,
+          "valorUnitario": 100.0,
+          "valorTotal": 600.0
+        },
+        {
+          "descricao": "Cadeira Estofada",
+          "codigo": "026",
+          "ncm": "94017100",
+          "quantidade": 6,
+          "valorUnitario": 100.0,
+          "valorTotal": 600.0
+        },
+        {
+          "descricao": "Cadeira Estofada",
+          "codigo": "026",
+          "ncm": "94017100",
+          "quantidade": 6,
+          "valorUnitario": 100.0,
+          "valorTotal": 600.0
+        },
+        {
+          "descricao": "Cadeira Estofada",
+          "codigo": "026",
+          "ncm": "94017100",
+          "quantidade": 6,
+          "valorUnitario": 100.0,
+          "valorTotal": 600.0
+        },
+        {
+          "descricao": "Cadeira Estofada",
+          "codigo": "026",
+          "ncm": "94017100",
+          "quantidade": 6,
+          "valorUnitario": 100.0,
+          "valorTotal": 600.0
+        },
+        {
+          "descricao": "Cadeira Estofada",
+          "codigo": "026",
+          "ncm": "94017100",
+          "quantidade": 6,
+          "valorUnitario": 100.0,
+          "valorTotal": 600.0
         }
       ],
       "numeroNFe": "1012",
@@ -1116,21 +1516,21 @@
         }
       },
       "dataEmissao": "2024-10-15T14:00:00",
-      "valorTotal": 4000.0,
+      "valorTotal": 403.4,
       "impostos": {
-        "icms": 300.0,
-        "ipi": 120.0,
-        "pis": 50.0,
-        "cofins": 70.0
+        "icms": 0.56,
+        "ipi": 0.24,
+        "pis": 2.0,
+        "cofins": 2.6
       },
       "produtos": [
         {
           "descricao": "Sofá 3 Lugares",
           "codigo": "032",
           "ncm": "94016100",
-          "quantidade": 20,
-          "valorUnitario": 200.0,
-          "valorTotal": 4000.0
+          "quantidade": 1,
+          "valorUnitario": 400.0,
+          "valorTotal": 400.0
         }
       ],
       "numeroNFe": "1021",
@@ -1164,21 +1564,21 @@
         }
       },
       "dataEmissao": "2024-10-25T15:00:00",
-      "valorTotal": 2000.0,
+      "valorTotal": 214.0,
       "impostos": {
-        "icms": 150.0,
-        "ipi": 60.0,
-        "pis": 30.0,
-        "cofins": 40.0
+        "icms": 2.0,
+        "ipi": 0.32,
+        "pis": 1.6,
+        "cofins": 2.08
       },
       "produtos": [
         {
           "descricao": "Carrinho de Controle Remoto",
           "codigo": "033",
           "ncm": "95030099",
-          "quantidade": 50,
-          "valorUnitario": 40.0,
-          "valorTotal": 2000.0
+          "quantidade": 1,
+          "valorUnitario": 210.0,
+          "valorTotal": 210.0
         }
       ],
       "numeroNFe": "1022",
@@ -1212,7 +1612,7 @@
         }
       },
       "dataEmissao": "2024-11-05T16:00:00",
-      "valorTotal": 5000.0,
+      "valorTotal": 180.0,
       "impostos": {
         "icms": 350.0,
         "ipi": 120.0,
@@ -1224,9 +1624,9 @@
           "descricao": "Furadeira Elétrica",
           "codigo": "034",
           "ncm": "84672100",
-          "quantidade": 50,
-          "valorUnitario": 100.0,
-          "valorTotal": 5000.0
+          "quantidade": 1,
+          "valorUnitario": 180.0,
+          "valorTotal": 180.0
         }
       ],
       "numeroNFe": "1023",
@@ -1272,9 +1672,73 @@
           "descricao": "Jaqueta de Couro",
           "codigo": "035",
           "ncm": "42031000",
-          "quantidade": 40,
+          "quantidade": 1,
           "valorUnitario": 100.0,
-          "valorTotal": 4000.0
+          "valorTotal": 100.0
+        },
+        {
+          "descricao": "Calça Jeans",
+          "codigo": "036",
+          "ncm": "62046200",
+          "quantidade": 1,
+          "valorUnitario": 120.0,
+          "valorTotal": 120.0
+        },
+        {
+          "descricao": "Camisa Social",
+          "codigo": "037",
+          "ncm": "62052000",
+          "quantidade": 1,
+          "valorUnitario": 140.0,
+          "valorTotal": 140.0
+        },
+        {
+          "descricao": "Vestido de Festa",
+          "codigo": "038",
+          "ncm": "62044200",
+          "quantidade": 1,
+          "valorUnitario": 200.0,
+          "valorTotal": 200.0
+        },
+        {
+          "descricao": "Sapato Social",
+          "codigo": "039",
+          "ncm": "64035910",
+          "quantidade": 1,
+          "valorUnitario": 300.0,
+          "valorTotal": 300.0
+        },
+        {
+          "descricao": "Bolsa de Couro",
+          "codigo": "040",
+          "ncm": "42022100",
+          "quantidade": 1,
+          "valorUnitario": 80.0,
+          "valorTotal": 80.0
+        },
+        {
+          "descricao": "Relógio de Pulso",
+          "codigo": "041",
+          "ncm": "91021100",
+          "quantidade": 1,
+          "valorUnitario": 320.0,
+          "valorTotal": 320.0
+        },
+        {
+          "descricao": "Óculos de Sol",
+          "codigo": "042",
+          "ncm": "90041000",
+          "quantidade": 1,
+          "valorUnitario": 72.0,
+          "valorTotal": 72.0
+        },
+        {
+          "descricao": "Perfume Importado",
+          "codigo": "043",
+          "ncm": "33030000",
+          "quantidade": 1,
+          "valorUnitario": 520.0,
+          "valorTotal": 520.0
         }
       ],
       "numeroNFe": "1024",
@@ -1317,12 +1781,12 @@
       },
       "produtos": [
         {
-          "descricao": "Notebook 16GB RAM",
+          "descricao": "16GB DE MEMÓRIA RAM",
           "codigo": "036",
           "ncm": "84713012",
-          "quantidade": 10,
-          "valorUnitario": 800.0,
-          "valorTotal": 8000.0
+          "quantidade": 2,
+          "valorUnitario": 340.0,
+          "valorTotal": 680.0
         }
       ],
       "numeroNFe": "1025",
@@ -1368,9 +1832,17 @@
           "descricao": "Smartphone 128GB",
           "codigo": "037",
           "ncm": "85171231",
-          "quantidade": 30,
-          "valorUnitario": 200.0,
-          "valorTotal": 6000.0
+          "quantidade": 1,
+          "valorUnitario": 920.0,
+          "valorTotal": 920.0
+        },
+        {
+          "descricao": "Tablet 64GB",
+          "codigo": "038",
+          "ncm": "84713012",
+          "quantidade": 1,
+          "valorUnitario": 1016.0,
+          "valorTotal": 1016.0
         }
       ],
       "numeroNFe": "1026",
@@ -1413,12 +1885,76 @@
       },
       "produtos": [
         {
-          "descricao": "Vestido de Festa",
+          "descricao": "Vestido Preto",
           "codigo": "038",
           "ncm": "62044200",
-          "quantidade": 40,
+          "quantidade": 1,
           "valorUnitario": 100.0,
-          "valorTotal": 4000.0
+          "valorTotal": 100.0
+        },
+        {
+          "descricao": "Calça Jeans",
+          "codigo": "039",
+          "ncm": "62046200",
+          "quantidade": 1,
+          "valorUnitario": 120.0,
+          "valorTotal": 120.0
+        },
+        {
+          "descricao": "Camisa Social",
+          "codigo": "040",
+          "ncm": "62052000",
+          "quantidade": 1,
+          "valorUnitario": 140.0,
+          "valorTotal": 140.0
+        },
+        {
+          "descricao": "Vestido de Festa",
+          "codigo": "041",
+          "ncm": "62044200",
+          "quantidade": 1,
+          "valorUnitario": 200.0,
+          "valorTotal": 200.0
+        },
+        {
+          "descricao": "Sapato Social",
+          "codigo": "042",
+          "ncm": "64035910",
+          "quantidade": 1,
+          "valorUnitario": 300.0,
+          "valorTotal": 300.0
+        },
+        {
+          "descricao": "Bolsa de Couro",
+          "codigo": "043",
+          "ncm": "42022100",
+          "quantidade": 1,
+          "valorUnitario": 80.0,
+          "valorTotal": 80.0
+        },
+        {
+          "descricao": "Relógio de Pulso",
+          "codigo": "044",
+          "ncm": "91021100",
+          "quantidade": 1,
+          "valorUnitario": 320.0,
+          "valorTotal": 320.0
+        },
+        {
+          "descricao": "Óculos de Sol",
+          "codigo": "045",
+          "ncm": "90041000",
+          "quantidade": 1,
+          "valorUnitario": 72.0,
+          "valorTotal": 72.0
+        },
+        {
+          "descricao": "Perfume Importado",
+          "codigo": "046",
+          "ncm": "33030000",
+          "quantidade": 1,
+          "valorUnitario": 520.0,
+          "valorTotal": 520.0
         }
       ],
       "numeroNFe": "1027",
