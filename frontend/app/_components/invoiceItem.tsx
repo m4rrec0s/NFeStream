@@ -2,6 +2,7 @@ import { NFes } from "../_interfaces/dataInterface"
 import Link from "next/link"
 import { Badge } from "./ui/badge"
 import { formatCurrency } from "../_helpers/currencyConverter"
+import { dateConverter } from "../_helpers/dateConverter"
 
 interface InvoiceItemProps {
   invoice: NFes
@@ -16,19 +17,24 @@ const InvoiceItem = ({ invoice }: InvoiceItemProps) => {
       <div className="flex flex-col gap-3">
         <div className="flex flex-col">
           <h3 className="text-base font-semibold">{invoice.emitente.nome}</h3>
-          <div className="flex gap-2 text-gray-500">
-            {invoice.produtos.length > 1 ? (
+          <div>
+            <div className="flex gap-2 text-gray-500">
+              {invoice.produtos.length > 1 ? (
+                <p className="text-sm font-light">
+                  {invoice.produtos.length} Produtos
+                </p>
+              ) : (
+                <p className="text-sm font-light">
+                  {invoice.produtos.length} Produto
+                </p>
+              )}
+              {" • "}
               <p className="text-sm font-light">
-                {invoice.produtos.length} Produtos
+                {formatCurrency(invoice.valorTotal)}
               </p>
-            ) : (
-              <p className="text-sm font-light">
-                {invoice.produtos.length} Produto
-              </p>
-            )}
-            {" • "}
-            <p className="text-sm font-light">
-              {formatCurrency(invoice.valorTotal)}
+            </div>
+            <p className="text-sm font-medium text-gray-500">
+              {invoice.destinatario.nome}
             </p>
           </div>
         </div>
@@ -42,13 +48,7 @@ const InvoiceItem = ({ invoice }: InvoiceItemProps) => {
           </Badge>
         )}
       </div>
-      <p className="text-gray-500">
-        {new Date(invoice.dataEmissao).toLocaleDateString("pt-BR", {
-          year: "numeric",
-          month: "short",
-          day: "2-digit",
-        })}
-      </p>
+      <p className="text-gray-500">{dateConverter(invoice.dataEmissao)}</p>
     </Link>
   )
 }
